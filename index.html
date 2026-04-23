@@ -19,14 +19,16 @@
     <meta property="og:locale" content="fr_FR">
     <meta property="og:locale:alternate" content="en_US">
 
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:creator" content="@falyba94">
     <meta name="twitter:title" content="Mouhamadou Faly Ba — Public Health Researcher">
     <meta name="twitter:description" content="PharmD, MPH, PhD. Pharmacist and public health researcher (UCAD, Senegal).">
-    <meta name="twitter:image" content="IMG-MFB-new.png">
 
-    <link rel="icon" type="image/png" href="IMG-MFB-new.png">
-    <link rel="apple-touch-icon" href="IMG-MFB-new.png">
+    <!-- Favicon : logo MFB -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="mask-icon" href="favicon.svg" color="#3b63e6">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,34 +45,37 @@
 <!-- ========== NAV ========== -->
 <header class="nav" id="nav">
     <div class="nav-inner">
-        <a href="#top" class="brand" aria-label="Mouhamadou Faly Ba">
+        <a href="#" class="brand" data-panel="home" aria-label="MFB - Accueil">
             <span class="brand-mark">MFB</span>
-            <span>Mouhamadou Faly Ba</span>
         </a>
 
         <nav class="nav-links" id="nav-links" aria-label="Navigation principale">
-            <a class="nav-link" href="#about">
+            <a class="nav-link" data-panel="home">
+                <span class="lang-fr">Accueil</span>
+                <span class="lang-en">Home</span>
+            </a>
+            <a class="nav-link" data-panel="about">
                 <span class="lang-fr">À propos</span>
                 <span class="lang-en">About</span>
             </a>
-            <a class="nav-link" href="#education">
+            <a class="nav-link" data-panel="education">
                 <span class="lang-fr">Formation</span>
                 <span class="lang-en">Education</span>
             </a>
-            <a class="nav-link" href="#projects">
+            <a class="nav-link" data-panel="projects">
                 <span class="lang-fr">Projets</span>
                 <span class="lang-en">Projects</span>
             </a>
-            <a class="nav-link" href="#teaching">
+            <a class="nav-link" data-panel="teaching">
                 <span class="lang-fr">Enseignement</span>
                 <span class="lang-en">Teaching</span>
             </a>
-            <a class="nav-link" href="#publications">Publications</a>
-            <a class="nav-link" href="#skills">
+            <a class="nav-link" data-panel="publications">Publications</a>
+            <a class="nav-link" data-panel="skills">
                 <span class="lang-fr">Compétences</span>
                 <span class="lang-en">Skills</span>
             </a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <a class="nav-link" data-panel="contact">Contact</a>
         </nav>
 
         <div class="nav-actions">
@@ -88,982 +93,1077 @@
     </div>
 </header>
 
-<!-- ========== HERO ========== -->
-<section class="hero" id="top">
-    <div class="container">
-        <div class="hero-grid">
-            <div class="hero-text reveal">
-                <span class="hero-eyebrow">
-                    <span class="dot"></span>
-                    <span class="lang-fr">Disponible pour la recherche & le conseil</span>
-                    <span class="lang-en">Available for research & consulting</span>
-                </span>
+<main>
 
-                <h1 class="hero-title">
-                    <span class="lang-fr">Mouhamadou Faly Ba, <span class="accent">PhD</span></span>
-                    <span class="lang-en">Mouhamadou Faly Ba, <span class="accent">PhD</span></span>
-                </h1>
+<!-- ========== PANEL : HOME ========== -->
+<section class="panel active" id="panel-home">
+    <div class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text reveal">
+                    <h1 class="hero-title">
+                        <span class="lang-fr">Mouhamadou Faly Ba, <span class="accent">PhD</span></span>
+                        <span class="lang-en">Mouhamadou Faly Ba, <span class="accent">PhD</span></span>
+                    </h1>
 
-                <p class="hero-sub lang-fr">
-                    Pharmacien et chercheur en santé publique à l'Université Cheikh Anta Diop (Dakar, Sénégal).
-                    Je conçois, coordonne et évalue des programmes de santé — au croisement de
-                    l'épidémiologie, de la recherche de mise en œuvre et des politiques publiques.
-                </p>
-                <p class="hero-sub lang-en">
-                    Pharmacist and public health researcher at Cheikh Anta Diop University (Dakar, Senegal).
-                    I design, coordinate and evaluate health programs — at the intersection of
-                    epidemiology, implementation research and health policy.
-                </p>
+                    <p class="hero-sub lang-fr">
+                        Pharmacien et chercheur en santé publique à l'Université Cheikh Anta Diop (Dakar, Sénégal).
+                        Je conçois, coordonne et évalue des programmes de santé — au croisement de
+                        l'épidémiologie, de la recherche de mise en œuvre et des politiques publiques.
+                    </p>
+                    <p class="hero-sub lang-en">
+                        Pharmacist and public health researcher at Cheikh Anta Diop University (Dakar, Senegal).
+                        I design, coordinate and evaluate health programs — at the intersection of
+                        epidemiology, implementation research and health policy.
+                    </p>
 
-                <div class="hero-tags">
-                    <span class="hero-tag"><i class="fa-solid fa-microscope"></i>&nbsp; <span class="lang-fr">Épidémiologie</span><span class="lang-en">Epidemiology</span></span>
-                    <span class="hero-tag"><i class="fa-solid fa-chart-line"></i>&nbsp; <span class="lang-fr">Analyse de données (R)</span><span class="lang-en">Data analysis (R)</span></span>
-                    <span class="hero-tag"><i class="fa-solid fa-clipboard-check"></i>&nbsp; <span class="lang-fr">Évaluation de programmes</span><span class="lang-en">Program evaluation</span></span>
-                    <span class="hero-tag"><i class="fa-solid fa-people-arrows"></i>&nbsp; <span class="lang-fr">Recherche de mise en œuvre</span><span class="lang-en">Implementation research</span></span>
+                    <div class="hero-tags">
+                        <span class="hero-tag"><i class="fa-solid fa-microscope"></i>&nbsp;<span class="lang-fr">Épidémiologie</span><span class="lang-en">Epidemiology</span></span>
+                        <span class="hero-tag"><i class="fa-solid fa-chart-line"></i>&nbsp;<span class="lang-fr">Analyse de données (R)</span><span class="lang-en">Data analysis (R)</span></span>
+                        <span class="hero-tag"><i class="fa-solid fa-clipboard-check"></i>&nbsp;<span class="lang-fr">Évaluation de programmes</span><span class="lang-en">Program evaluation</span></span>
+                        <span class="hero-tag"><i class="fa-solid fa-people-arrows"></i>&nbsp;<span class="lang-fr">Recherche de mise en œuvre</span><span class="lang-en">Implementation research</span></span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a class="btn btn-primary" data-panel="contact" href="#">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span class="lang-fr">Me contacter</span>
+                            <span class="lang-en">Get in touch</span>
+                        </a>
+                        <a class="btn btn-ghost" id="cv-download" href="cv/MFB_CV_FR.docx" download>
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            <span class="lang-fr">Télécharger le CV</span>
+                            <span class="lang-en">Download CV</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-social" aria-label="Profils sociaux">
+                        <a href="https://linkedin.com/in/mouhamadou-faly-ba-8767581b1/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.researchgate.net/profile/Mouhamadou-Faly-Ba" target="_blank" rel="noopener" title="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+                        <a href="https://orcid.org/0000-0002-1898-738X" target="_blank" rel="noopener" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+                        <a href="https://twitter.com/falyba94" target="_blank" rel="noopener" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://github.com/falyba1" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:falyba1@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
                 </div>
 
-                <div class="hero-cta">
-                    <a class="btn btn-primary" href="#contact">
-                        <i class="fa-solid fa-paper-plane"></i>
-                        <span class="lang-fr">Me contacter</span>
-                        <span class="lang-en">Get in touch</span>
-                    </a>
-                    <a class="btn btn-ghost" id="cv-download" href="cv/MFB_CV_FR.docx" download>
-                        <i class="fa-solid fa-file-arrow-down"></i>
-                        <span class="lang-fr">Télécharger le CV</span>
-                        <span class="lang-en">Download CV</span>
-                    </a>
-                </div>
-
-                <div class="hero-social" aria-label="Profils sociaux">
-                    <a href="https://linkedin.com/in/mouhamadou-faly-ba-8767581b1/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/falyba94" target="_blank" rel="noopener" title="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://github.com/falyba1" target="_blank" rel="noopener" title="GitHub"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://scholar.google.com/citations?user=&q=Mouhamadou+Faly+Ba" target="_blank" rel="noopener" title="Google Scholar"><i class="fa-brands fa-google-scholar"></i></a>
-                    <a href="https://orcid.org/" target="_blank" rel="noopener" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
-                    <a href="mailto:falyba1@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                <div class="hero-portrait reveal">
+                    <div class="hero-portrait-ring" aria-hidden="true"></div>
+                    <div class="hero-portrait-frame">
+                        <img src="IMG-MFB-new.png" alt="Portrait de Mouhamadou Faly Ba" class="hero-portrait-img">
+                    </div>
+                    <div class="badge-floating bf-1">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span>PharmD · MPH · PhD</span>
+                    </div>
+                    <div class="badge-floating bf-2">
+                        <i class="fa-solid fa-book-open"></i>
+                        <span>
+                            <span class="lang-fr">41+ articles publiés</span>
+                            <span class="lang-en">41+ published articles</span>
+                        </span>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <div class="hero-portrait reveal">
-                <div class="hero-portrait-ring" aria-hidden="true"></div>
-                <div class="hero-portrait-frame">
-                    <img src="IMG-MFB-new.png" alt="Portrait de Mouhamadou Faly Ba" class="hero-portrait-img">
+    <div class="stats reveal" aria-label="Chiffres clés">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat">
+                    <div class="stat-value" data-count="41">0</div>
+                    <div class="stat-label">
+                        <span class="lang-fr">Publications</span><span class="lang-en">Publications</span>
+                    </div>
                 </div>
-                <div class="badge-floating bf-1">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <span>PharmD · MPH · PhD</span>
+                <div class="stat">
+                    <div class="stat-value" data-count="30">0</div>
+                    <div class="stat-label">
+                        <span class="lang-fr">Projets menés</span><span class="lang-en">Projects led</span>
+                    </div>
                 </div>
-                <div class="badge-floating bf-2">
-                    <i class="fa-solid fa-book-open"></i>
-                    <span>
-                        <span class="lang-fr">41+ articles publiés</span>
-                        <span class="lang-en">41+ published articles</span>
-                    </span>
+                <div class="stat">
+                    <div class="stat-value" data-count="3">0</div>
+                    <div class="stat-label">
+                        <span class="lang-fr">Unités d'enseignement</span><span class="lang-en">Teaching units</span>
+                    </div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value" data-count="7">0</div>
+                    <div class="stat-label">
+                        <span class="lang-fr">Pays d'intervention</span><span class="lang-en">Countries of work</span>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- ========== STATS ========== -->
-<section class="stats reveal" aria-label="Chiffres clés">
-    <div class="container">
-        <div class="stats-grid">
-            <div class="stat">
-                <div class="stat-value" data-count="41">0</div>
-                <div class="stat-label">
-                    <span class="lang-fr">Publications</span>
-                    <span class="lang-en">Publications</span>
-                </div>
+<!-- ========== PANEL : ABOUT ========== -->
+<section class="panel" id="panel-about">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><span class="lang-fr">À propos</span><span class="lang-en">About</span></span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Un profil pluridisciplinaire au service de la santé publique</span>
+                    <span class="lang-en">A multidisciplinary profile serving public health</span>
+                </h2>
+                <p class="section-desc">
+                    <span class="lang-fr">De la pharmacie à l'épidémiologie, de l'analyse de données à l'évaluation de programmes : un parcours construit autour de l'évidence scientifique au service de l'action.</span>
+                    <span class="lang-en">From pharmacy to epidemiology, from data analysis to program evaluation: a career built on scientific evidence at the service of action.</span>
+                </p>
             </div>
-            <div class="stat">
-                <div class="stat-value" data-count="30">0</div>
-                <div class="stat-label">
-                    <span class="lang-fr">Projets menés</span>
-                    <span class="lang-en">Projects led</span>
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="lang-fr">
+                        Je suis <strong>Mouhamadou Faly Ba</strong>, pharmacien de formation, titulaire d'un Master en santé publique (option épidémiologie) et d'un <strong>Doctorat en santé publique</strong> obtenu en 2024 à l'Université Cheikh Anta Diop de Dakar. Mes travaux se situent à l'intersection de la recherche de mise en œuvre, de l'évaluation des politiques de santé et de l'analyse épidémiologique.
+                    </p>
+                    <p class="lang-fr">
+                        J'ai coordonné ou co-investigué des projets financés par l'<em>OMS (TDR)</em>, la <em>Banque mondiale</em>, la <em>Fondation Bill & Melinda Gates</em>, l'<em>Agence Française de Développement</em>, <em>Affaire Mondiale Canada</em>, <em>APHRC</em>, <em>Nutrition International</em>, <em>Helen Keller Intl</em> ou encore l'<em>IRD</em>. Mes terrains incluent le Sénégal, le Burkina Faso, le Mali, la RDC, le Bénin, le Tchad et la Mauritanie.
+                    </p>
+                    <p class="lang-fr">
+                        J'enseigne la méthodologie de la recherche, la biostatistique, l'épidémiologie et l'informatique appliquée (R) dans plusieurs universités — UCAD, Université Gaston Berger (Saint-Louis), Université Alioune Diop de Bambey et l'UQAT (Québec), où j'interviens dans l'enseignement de la pharmacie internationale.
+                    </p>
+
+                    <p class="lang-en">
+                        I am <strong>Mouhamadou Faly Ba</strong>, a pharmacist by training, with a Master's in public health (epidemiology) and a <strong>PhD in Public Health</strong> (2024) from Cheikh Anta Diop University in Dakar. My work sits at the intersection of implementation research, health-policy evaluation and epidemiological analysis.
+                    </p>
+                    <p class="lang-en">
+                        I have led or co-investigated projects funded by <em>WHO (TDR)</em>, the <em>World Bank</em>, the <em>Bill & Melinda Gates Foundation</em>, the <em>French Development Agency (AFD)</em>, <em>Global Affairs Canada</em>, <em>APHRC</em>, <em>Nutrition International</em>, <em>Helen Keller Intl</em> and the <em>IRD</em>. My field work spans Senegal, Burkina Faso, Mali, DRC, Benin, Chad and Mauritania.
+                    </p>
+                    <p class="lang-en">
+                        I teach research methodology, biostatistics, epidemiology and applied computing (R) at several universities — UCAD, Gaston Berger University (Saint-Louis), Alioune Diop University of Bambey and UQAT (Quebec), where I teach international pharmacy.
+                    </p>
+
+                    <div class="about-highlight">
+                        <i class="fa-solid fa-quote-left"></i>
+                        <span class="lang-fr"><strong>« Transformer les données en décisions »</strong> — produire des données probantes localement ancrées pour informer les politiques et améliorer l'accès aux soins.</span>
+                        <span class="lang-en"><strong>"Turning data into decisions"</strong> — producing locally-grounded evidence to inform policy and improve access to care.</span>
+                    </div>
                 </div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" data-count="15">0</div>
-                <div class="stat-label">
-                    <span class="lang-fr">Unités d'enseignement</span>
-                    <span class="lang-en">Teaching units</span>
-                </div>
-            </div>
-            <div class="stat">
-                <div class="stat-value" data-count="7">0</div>
-                <div class="stat-label">
-                    <span class="lang-fr">Pays d'intervention</span>
-                    <span class="lang-en">Countries of work</span>
-                </div>
+
+                <aside class="interest-card reveal">
+                    <h3>
+                        <i class="fa-solid fa-bullseye"></i>
+                        <span class="lang-fr">Domaines d'intérêt</span>
+                        <span class="lang-en">Research interests</span>
+                    </h3>
+                    <ul class="interest-list">
+                        <li class="lang-fr">Recherche de mise en œuvre (RMO) appliquée aux systèmes de santé</li>
+                        <li class="lang-fr">Santé reproductive, maternelle, néonatale, infantile et des adolescents (SRMNIA)</li>
+                        <li class="lang-fr">Épidémiologie des maladies infectieuses et surveillance</li>
+                        <li class="lang-fr">Évaluation de politiques et programmes de santé (protection sociale, CSU, RAM)</li>
+                        <li class="lang-fr">IA & santé numérique (chatbots LLM pour la planification familiale)</li>
+                        <li class="lang-fr">One Health : zoonoses, rage, sécurité sanitaire</li>
+
+                        <li class="lang-en">Implementation research (IR) applied to health systems</li>
+                        <li class="lang-en">Sexual, reproductive, maternal, newborn, child & adolescent health (RMNCAH)</li>
+                        <li class="lang-en">Epidemiology of infectious diseases & surveillance</li>
+                        <li class="lang-en">Health policy & program evaluation (social protection, UHC, AMR)</li>
+                        <li class="lang-en">AI & digital health (LLM chatbots for family planning)</li>
+                        <li class="lang-en">One Health: zoonoses, rabies, health security</li>
+                    </ul>
+                </aside>
             </div>
         </div>
     </div>
+
+    <!-- Contact teaser at bottom of panel -->
+    <div data-contact-teaser></div>
 </section>
 
-<!-- ========== ABOUT ========== -->
-<section class="section" id="about">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">
-                <span class="lang-fr">À propos</span><span class="lang-en">About</span>
-            </span>
-            <h2 class="section-title">
-                <span class="lang-fr">Un profil pluridisciplinaire au service de la santé publique</span>
-                <span class="lang-en">A multidisciplinary profile serving public health</span>
-            </h2>
-            <p class="section-desc">
-                <span class="lang-fr">De la pharmacie à l'épidémiologie, de l'analyse de données à l'évaluation de programmes : un parcours construit autour de l'évidence scientifique au service de l'action.</span>
-                <span class="lang-en">From pharmacy to epidemiology, from data analysis to program evaluation: a career built on scientific evidence at the service of action.</span>
-            </p>
-        </div>
-
-        <div class="about-grid">
-            <div class="about-text reveal">
-                <p class="lang-fr">
-                    Je suis <strong>Mouhamadou Faly Ba</strong>, pharmacien de formation, titulaire d'un Master en santé publique (option épidémiologie) et d'un <strong>Doctorat en santé publique</strong> obtenu en 2024 à l'Université Cheikh Anta Diop de Dakar. Mes travaux se situent à l'intersection de la recherche de mise en œuvre, de l'évaluation des politiques de santé et de l'analyse épidémiologique.
-                </p>
-                <p class="lang-fr">
-                    J'ai coordonné ou co-investigué des projets financés par l'<em>OMS (TDR)</em>, la <em>Banque mondiale</em>, la <em>Fondation Bill & Melinda Gates</em>, l'<em>Agence Française de Développement</em>, <em>Affaire Mondiale Canada</em>, <em>APHRC</em>, <em>Nutrition International</em>, <em>Helen Keller Intl</em> ou encore l'<em>IRD</em>. Mes terrains incluent le Sénégal, le Burkina Faso, le Mali, la RDC, le Bénin, le Tchad et la Mauritanie.
-                </p>
-                <p class="lang-fr">
-                    J'enseigne la méthodologie de la recherche, la biostatistique, l'épidémiologie et l'informatique appliquée (R) dans plusieurs universités — UCAD, Université Gaston Berger (Saint-Louis), Université Alioune Diop de Bambey, UQAT (Québec) et l'Université de Montréal.
-                </p>
-
-                <p class="lang-en">
-                    I am <strong>Mouhamadou Faly Ba</strong>, a pharmacist by training, with a Master's in public health (epidemiology) and a <strong>PhD in Public Health</strong> (2024) from Cheikh Anta Diop University in Dakar. My work sits at the intersection of implementation research, health-policy evaluation and epidemiological analysis.
-                </p>
-                <p class="lang-en">
-                    I have led or co-investigated projects funded by <em>WHO (TDR)</em>, the <em>World Bank</em>, the <em>Bill & Melinda Gates Foundation</em>, the <em>French Development Agency (AFD)</em>, <em>Global Affairs Canada</em>, <em>APHRC</em>, <em>Nutrition International</em>, <em>Helen Keller Intl</em> and the <em>IRD</em>. My field work spans Senegal, Burkina Faso, Mali, DRC, Benin, Chad and Mauritania.
-                </p>
-                <p class="lang-en">
-                    I teach research methodology, biostatistics, epidemiology and applied computing (R) at several universities — UCAD, Gaston Berger University (Saint-Louis), Alioune Diop University of Bambey, UQAT (Quebec) and University of Montreal.
-                </p>
-
-                <div class="about-highlight">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <span class="lang-fr"><strong>« Transformer les données en décisions »</strong> — produire des données probantes localement ancrées pour informer les politiques et améliorer l'accès aux soins.</span>
-                    <span class="lang-en"><strong>"Turning data into decisions"</strong> — producing locally-grounded evidence to inform policy and improve access to care.</span>
-                </div>
+<!-- ========== PANEL : EDUCATION ========== -->
+<section class="panel" id="panel-education">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><span class="lang-fr">Formation</span><span class="lang-en">Education</span></span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Trois diplômes, un fil conducteur : l'évidence</span>
+                    <span class="lang-en">Three degrees, one common thread: evidence</span>
+                </h2>
             </div>
 
-            <aside class="interest-card reveal">
-                <h3>
-                    <i class="fa-solid fa-bullseye"></i>
-                    <span class="lang-fr">Domaines d'intérêt</span>
-                    <span class="lang-en">Research interests</span>
-                </h3>
-                <ul class="interest-list">
-                    <li class="lang-fr">Recherche de mise en œuvre (RMO) appliquée aux systèmes de santé</li>
-                    <li class="lang-fr">Santé reproductive, maternelle, néonatale, infantile et des adolescents (SRMNIA)</li>
-                    <li class="lang-fr">Épidémiologie des maladies infectieuses et surveillance</li>
-                    <li class="lang-fr">Évaluation de politiques et programmes de santé (protection sociale, CSU, RAM)</li>
-                    <li class="lang-fr">IA & santé numérique (chatbots LLM pour la planification familiale)</li>
-                    <li class="lang-fr">One Health : zoonoses, rage, sécurité sanitaire</li>
+            <div class="timeline reveal">
+                <article class="tl-item">
+                    <span class="tl-date">07/2024</span>
+                    <h3 class="tl-title lang-fr">Doctorat (PhD) en Santé Publique</h3>
+                    <h3 class="tl-title lang-en">PhD in Public Health</h3>
+                    <p class="tl-sub lang-fr">École Doctorale des Sciences de la Vie, de la Santé et de l'Environnement — Université Cheikh Anta Diop, Dakar, Sénégal</p>
+                    <p class="tl-sub lang-en">Doctoral School of Life, Health & Environmental Sciences — Cheikh Anta Diop University, Dakar, Senegal</p>
+                </article>
 
-                    <li class="lang-en">Implementation research (IR) applied to health systems</li>
-                    <li class="lang-en">Sexual, reproductive, maternal, newborn, child & adolescent health (RMNCAH)</li>
-                    <li class="lang-en">Epidemiology of infectious diseases & surveillance</li>
-                    <li class="lang-en">Health policy & program evaluation (social protection, UHC, AMR)</li>
-                    <li class="lang-en">AI & digital health (LLM chatbots for family planning)</li>
-                    <li class="lang-en">One Health: zoonoses, rabies, health security</li>
-                </ul>
-            </aside>
+                <article class="tl-item">
+                    <span class="tl-date">11/2020</span>
+                    <h3 class="tl-title lang-fr">Master en Santé Publique — option Épidémiologie</h3>
+                    <h3 class="tl-title lang-en">Master in Public Health — Epidemiology</h3>
+                    <p class="tl-sub lang-fr">Institut de Santé et Développement (ISED), Dakar, Sénégal</p>
+                    <p class="tl-sub lang-en">Health & Development Institute (ISED), Dakar, Senegal</p>
+                </article>
+
+                <article class="tl-item">
+                    <span class="tl-date">07/2020</span>
+                    <h3 class="tl-title lang-fr">Doctorat en Pharmacie (PharmD)</h3>
+                    <h3 class="tl-title lang-en">Doctor of Pharmacy (PharmD)</h3>
+                    <p class="tl-sub lang-fr">Faculté de Médecine, de Pharmacie et d'Odontologie — Université Cheikh Anta Diop, Dakar, Sénégal</p>
+                    <p class="tl-sub lang-en">Faculty of Medicine, Pharmacy & Odontology — Cheikh Anta Diop University, Dakar, Senegal</p>
+                </article>
+            </div>
         </div>
     </div>
+
+    <div data-contact-teaser></div>
 </section>
 
-<!-- ========== EDUCATION ========== -->
-<section class="section section--alt" id="education">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">
-                <span class="lang-fr">Formation</span><span class="lang-en">Education</span>
-            </span>
-            <h2 class="section-title">
-                <span class="lang-fr">Trois diplômes, un fil conducteur : l'évidence</span>
-                <span class="lang-en">Three degrees, one common thread: evidence</span>
-            </h2>
-        </div>
+<!-- ========== PANEL : PROJECTS ========== -->
+<section class="panel" id="panel-projects">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><span class="lang-fr">Projets & expériences</span><span class="lang-en">Projects & experience</span></span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Une recherche ancrée dans l'action</span>
+                    <span class="lang-en">Research rooted in action</span>
+                </h2>
+                <p class="section-desc">
+                    <span class="lang-fr">Sélection de projets menés en tant qu'investigateur principal, co-investigateur, coordinateur ou consultant.</span>
+                    <span class="lang-en">Selection of projects led as principal investigator, co-investigator, coordinator or consultant.</span>
+                </p>
+            </div>
 
-        <div class="timeline reveal">
-            <article class="tl-item">
-                <span class="tl-date">07/2024</span>
-                <h3 class="tl-title lang-fr">Doctorat (PhD) en Santé Publique</h3>
-                <h3 class="tl-title lang-en">PhD in Public Health</h3>
-                <p class="tl-sub lang-fr">École Doctorale des Sciences de la Vie, de la Santé et de l'Environnement — Université Cheikh Anta Diop, Dakar, Sénégal</p>
-                <p class="tl-sub lang-en">Doctoral School of Life, Health & Environmental Sciences — Cheikh Anta Diop University, Dakar, Senegal</p>
-            </article>
+            <div class="filters reveal">
+                <button class="filter-btn active" data-filter="all"><span class="lang-fr">Tous</span><span class="lang-en">All</span></button>
+                <button class="filter-btn" data-filter="2026"><span class="lang-fr">2025–2026</span><span class="lang-en">2025–2026</span></button>
+                <button class="filter-btn" data-filter="2024">2024</button>
+                <button class="filter-btn" data-filter="2023">2023</button>
+                <button class="filter-btn" data-filter="prior"><span class="lang-fr">Avant 2023</span><span class="lang-en">Before 2023</span></button>
+            </div>
 
-            <article class="tl-item">
-                <span class="tl-date">11/2020</span>
-                <h3 class="tl-title lang-fr">Master en Santé Publique — option Épidémiologie</h3>
-                <h3 class="tl-title lang-en">Master in Public Health — Epidemiology</h3>
-                <p class="tl-sub lang-fr">Institut de Santé et Développement (ISED), Dakar, Sénégal</p>
-                <p class="tl-sub lang-en">Health & Development Institute (ISED), Dakar, Senegal</p>
-            </article>
+            <div class="projects-grid reveal">
+                <article class="proj-card" data-year="2026">
+                    <div class="proj-head">
+                        <span class="proj-year">2026</span>
+                        <span class="proj-role lang-fr">Consultant</span><span class="proj-role lang-en">Consultant</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Coordination stratégique de la réponse à la polio : analyse de la gestion des cVDPV-1 et cVDPV-2 en RDC</h3>
+                    <h3 class="proj-title lang-en">Strategic coordination of the polio response: management of cVDPV-1 and cVDPV-2 in DRC</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>République Démocratique du Congo</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Solina Health</span></div>
+                    </div>
+                </article>
 
-            <article class="tl-item">
-                <span class="tl-date">07/2020</span>
-                <h3 class="tl-title lang-fr">Doctorat en Pharmacie (PharmD)</h3>
-                <h3 class="tl-title lang-en">Doctor of Pharmacy (PharmD)</h3>
-                <p class="tl-sub lang-fr">Faculté de Médecine, de Pharmacie et d'Odontologie — Université Cheikh Anta Diop, Dakar, Sénégal</p>
-                <p class="tl-sub lang-en">Faculty of Medicine, Pharmacy & Odontology — Cheikh Anta Diop University, Dakar, Senegal</p>
-            </article>
+                <article class="proj-card" data-year="2026">
+                    <div class="proj-head">
+                        <span class="proj-year">2025–2026</span>
+                        <span class="proj-role lang-fr">Co-Investigateur</span><span class="proj-role lang-en">Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Cadre « Evidence to Action » (E2A) appliqué au programme Healthy Cities for Adolescents (HCA II) — Phase d'extension</h3>
+                    <h3 class="proj-title lang-en">"Evidence to Action" (E2A) framework applied to the Healthy Cities for Adolescents (HCA II) program — Extension phase</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Pikine, Thiès, Tivaouane — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Fondation Botnar (Ecorys) / Nutrition International</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-university"></i><span>ISED – UCAD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2026">
+                    <div class="proj-head">
+                        <span class="proj-year">2025–2026</span>
+                        <span class="proj-role lang-fr">Co-Investigateur</span><span class="proj-role lang-en">Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Volonté à payer pour une supplémentation en micronutriments multiples chez les femmes enceintes</h3>
+                    <h3 class="proj-title lang-en">Willingness to pay for multiple micronutrient supplementation among pregnant women</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Louga — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Helen Keller Intl</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2026">
+                    <div class="proj-head">
+                        <span class="proj-year">2025</span>
+                        <span class="proj-role lang-fr">Investigateur Principal</span><span class="proj-role lang-en">Principal Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Évaluation nationale du système des laboratoires de biologie médicale</h3>
+                    <h3 class="proj-title lang-en">National evaluation of the medical biology laboratory system</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Direction des Laboratoires – MSAS / RESAOLAB</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2026">
+                    <div class="proj-head">
+                        <span class="proj-year">2025</span>
+                        <span class="proj-role lang-fr">Co-investigateur</span><span class="proj-role lang-en">Co-investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Évaluation finale du projet COVID-19 (2020–2025)</h3>
+                    <h3 class="proj-title lang-en">Final evaluation of the COVID-19 project (2020–2025)</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2024">
+                    <div class="proj-head">
+                        <span class="proj-year">2024–2026</span>
+                        <span class="proj-role lang-fr">Co-Investigateur</span><span class="proj-role lang-en">Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Chatbot LLM (GPT-4) sur la planification familiale</h3>
+                    <h3 class="proj-title lang-en">LLM (GPT-4) chatbot on family planning</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Dakar — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>DIMAGI / Fondation Bill & Melinda Gates</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-university"></i><span>UCAD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023 — Présent</span>
+                        <span class="proj-role lang-fr">Coordinateur</span><span class="proj-role lang-en">Coordinator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Programme du Centre Régional de Formation (MOOC & formations sur la recherche de mise en œuvre)</h3>
+                    <h3 class="proj-title lang-en">Regional Training Center Program (MOOC & implementation-research trainings)</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">Afrique francophone</span><span class="lang-en">French-speaking Africa</span></span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>TDR – OMS / UCAD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2024">
+                    <div class="proj-head">
+                        <span class="proj-year">2024–2025</span>
+                        <span class="proj-role lang-fr">Co-Investigateur</span><span class="proj-role lang-en">Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Planification familiale et santé maternelle, néonatale et infantile</h3>
+                    <h3 class="proj-title lang-en">Family planning & maternal, newborn and child health</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">National — Sénégal</span><span class="lang-en">National — Senegal</span></span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>APHRC / Fondation Bill & Melinda Gates</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2024">
+                    <div class="proj-head">
+                        <span class="proj-year">2024</span>
+                        <span class="proj-role lang-fr">Co-Investigateur</span><span class="proj-role lang-en">Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Évaluation de base de la prise en charge de la malnutrition aiguë</h3>
+                    <h3 class="proj-title lang-en">Baseline assessment of acute malnutrition management</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Saint-Louis, Matam, Louga, Diourbel, Tambacounda</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Helen Keller Intl / UCAD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2024">
+                    <div class="proj-head">
+                        <span class="proj-year">2024</span>
+                        <span class="proj-role lang-fr">Coordinateur</span><span class="proj-role lang-en">Coordinator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Analyse situationnelle de la qualité des soins SRMNIA</h3>
+                    <h3 class="proj-title lang-en">Situational analysis of RMNCAH care quality</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>UCAD – DSME</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2024">
+                    <div class="proj-head">
+                        <span class="proj-year">2024</span>
+                        <span class="proj-role lang-fr">Consultant</span><span class="proj-role lang-en">Consultant</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">État des lieux du projet ELUZO</h3>
+                    <h3 class="proj-title lang-en">Baseline of the ELUZO project</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal – Burkina Faso</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023–2026</span>
+                        <span class="proj-role lang-fr">Chercheur pays</span><span class="proj-role lang-en">Country researcher</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Impact de la départementalisation des mutuelles de santé</h3>
+                    <h3 class="proj-title lang-en">Impact of the departmentalization of community health insurance</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Niakhar — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFD / UCAD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023–2024</span>
+                        <span class="proj-role lang-fr">Resp. Suivi-Évaluation</span><span class="proj-role lang-en">M&E Country Lead</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Renforcement de capacités des femmes et des filles — lutte contre les zoonoses</h3>
+                    <h3 class="proj-title lang-en">Capacity building for women & girls — fight against zoonoses</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Fatick, Kaffrine — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada / ONG COMI</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023</span>
+                        <span class="proj-role lang-fr">Co-investigateur</span><span class="proj-role lang-en">Co-investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Évaluation finale du projet REDISSE (2016–2023)</h3>
+                    <h3 class="proj-title lang-en">Final evaluation of the REDISSE project (2016–2023)</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023</span>
+                        <span class="proj-role lang-fr">Co-investigateur</span><span class="proj-role lang-en">Co-investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Analyse situationnelle des accidents de la circulation routière</h3>
+                    <h3 class="proj-title lang-en">Situational analysis of road traffic accidents</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">5 régions — Sénégal</span><span class="lang-en">5 regions — Senegal</span></span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="2023">
+                    <div class="proj-head">
+                        <span class="proj-year">2023</span>
+                        <span class="proj-role lang-fr">Consultant</span><span class="proj-role lang-en">Consultant</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Enquête endline — Engagement communautaire & vaccination COVID-19</h3>
+                    <h3 class="proj-title lang-en">Endline survey — Community engagement & COVID-19 vaccination</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Tchad</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>BASE / UNICEF / USAID</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="prior">
+                    <div class="proj-head">
+                        <span class="proj-year">2022–2023</span>
+                        <span class="proj-role lang-fr">Investigateur Principal</span><span class="proj-role lang-en">Principal Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Mise en œuvre de la stratégie de vaccination contre le cancer du col de l'utérus</h3>
+                    <h3 class="proj-title lang-en">Implementation of the cervical cancer vaccination strategy</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Dakar — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>TDR – OMS</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="prior">
+                    <div class="proj-head">
+                        <span class="proj-year">2021</span>
+                        <span class="proj-role lang-fr">Co-Investigateur principal</span><span class="proj-role lang-en">Lead Co-Investigator</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">CAP sur la prise en charge de la rage — professionnels de santé humaine et animale</h3>
+                    <h3 class="proj-title lang-en">KAP study on rabies management — human & animal health workers</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Kaffrine — Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFROHUN / USAID</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="prior">
+                    <div class="proj-head">
+                        <span class="proj-year">2020–2022</span>
+                        <span class="proj-role lang-fr">Statisticien</span><span class="proj-role lang-en">Statistician</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Plateforme technologique pour la démocratie et l'amélioration des systèmes de santé</h3>
+                    <h3 class="proj-title lang-en">Technology platform for democracy & health system improvement</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Burkina Faso, RDC, Bénin</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada / IRD</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="prior">
+                    <div class="proj-head">
+                        <span class="proj-year">2020–2022</span>
+                        <span class="proj-role lang-fr">Assistant de recherche</span><span class="proj-role lang-en">Research assistant</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Recherche-action en appui à la riposte africaine à l'épidémie de COVID-19</h3>
+                    <h3 class="proj-title lang-en">Action research supporting Africa's response to COVID-19</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFD / ISED</span></div>
+                    </div>
+                </article>
+
+                <article class="proj-card" data-year="prior">
+                    <div class="proj-head">
+                        <span class="proj-year">2019–2020</span>
+                        <span class="proj-role lang-fr">Statisticien</span><span class="proj-role lang-en">Statistician</span>
+                    </div>
+                    <h3 class="proj-title lang-fr">Profils des indigents et non-indigents — méthode Proxy Mean Test</h3>
+                    <h3 class="proj-title lang-en">Profiling of indigents & non-indigents — Proxy Mean Test method</h3>
+                    <div class="proj-meta">
+                        <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Mali</span></div>
+                        <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>ANAM</span></div>
+                    </div>
+                </article>
+            </div>
         </div>
     </div>
+
+    <div data-contact-teaser></div>
 </section>
 
-<!-- ========== PROJECTS ========== -->
-<section class="section" id="projects">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">
-                <span class="lang-fr">Projets & expériences</span><span class="lang-en">Projects & experience</span>
-            </span>
-            <h2 class="section-title">
-                <span class="lang-fr">Une recherche ancrée dans l'action</span>
-                <span class="lang-en">Research rooted in action</span>
-            </h2>
-            <p class="section-desc">
-                <span class="lang-fr">Sélection de projets menés en tant qu'investigateur principal, co-investigateur, coordinateur ou consultant.</span>
-                <span class="lang-en">Selection of projects led as principal investigator, co-investigator, coordinator or consultant.</span>
-            </p>
-        </div>
+<!-- ========== PANEL : TEACHING ========== -->
+<section class="panel" id="panel-teaching">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><span class="lang-fr">Enseignement</span><span class="lang-en">Teaching</span></span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Transmettre la rigueur de la recherche</span>
+                    <span class="lang-en">Transmitting research rigor</span>
+                </h2>
+                <p class="section-desc">
+                    <span class="lang-fr">Formations dispensées dans plusieurs universités au Sénégal et au Canada.</span>
+                    <span class="lang-en">Trainings delivered in several universities in Senegal and Canada.</span>
+                </p>
+            </div>
 
-        <div class="filters reveal">
-            <button class="filter-btn active" data-filter="all"><span class="lang-fr">Tous</span><span class="lang-en">All</span></button>
-            <button class="filter-btn" data-filter="2026"><span class="lang-fr">2025–2026</span><span class="lang-en">2025–2026</span></button>
-            <button class="filter-btn" data-filter="2024"><span class="lang-fr">2024</span><span class="lang-en">2024</span></button>
-            <button class="filter-btn" data-filter="2023"><span class="lang-fr">2023</span><span class="lang-en">2023</span></button>
-            <button class="filter-btn" data-filter="prior"><span class="lang-fr">Avant 2023</span><span class="lang-en">Before 2023</span></button>
-        </div>
+            <div class="teaching-grid reveal">
+                <article class="teach-card">
+                    <span class="proj-year">2023 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
+                    <h3 class="lang-fr">Méthodologie de la recherche</h3>
+                    <h3 class="lang-en">Research methodology</h3>
+                    <p class="inst lang-fr">Faculté de Médecine, de Pharmacie et d'Odontologie — UCAD (Master / DES)</p>
+                    <p class="inst lang-en">Faculty of Medicine, Pharmacy & Odontology — UCAD (Master / Specialization)</p>
+                </article>
 
-        <div class="projects-grid reveal">
-            <!-- 2026 -->
-            <article class="proj-card" data-year="2026">
-                <div class="proj-head">
-                    <span class="proj-year">2026</span>
-                    <span class="proj-role lang-fr">Consultant</span>
-                    <span class="proj-role lang-en">Consultant</span>
-                </div>
-                <h3 class="proj-title lang-fr">Coordination stratégique de la réponse à la polio : analyse de la gestion des cVDPV-1 et cVDPV-2 en RDC</h3>
-                <h3 class="proj-title lang-en">Strategic coordination of the polio response: management of cVDPV-1 and cVDPV-2 in DRC</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>République Démocratique du Congo</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Solina Health</span></div>
-                </div>
-            </article>
+                <article class="teach-card">
+                    <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
+                    <h3 class="lang-fr">Informatique appliquée à l'épidémiologie (R)</h3>
+                    <h3 class="lang-en">Applied computing for epidemiology (R)</h3>
+                    <p class="inst lang-fr">Université Gaston Berger, Saint-Louis — Master en Alimentation et Nutrition</p>
+                    <p class="inst lang-en">Gaston Berger University, Saint-Louis — Master in Food & Nutrition</p>
+                </article>
 
-            <!-- 2025-2026 -->
-            <article class="proj-card" data-year="2026">
-                <div class="proj-head">
-                    <span class="proj-year">2025–2026</span>
-                    <span class="proj-role lang-fr">Co-Investigateur</span>
-                    <span class="proj-role lang-en">Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Cadre « Evidence to Action » (E2A) appliqué au programme Healthy Cities for Adolescents (HCA II) — Phase d'extension</h3>
-                <h3 class="proj-title lang-en">"Evidence to Action" (E2A) framework applied to the Healthy Cities for Adolescents (HCA II) program — Extension phase</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Pikine, Thiès, Tivaouane — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Fondation Botnar (Ecorys) / Nutrition International</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-university"></i><span>ISED – UCAD</span></div>
-                </div>
-            </article>
+                <article class="teach-card">
+                    <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
+                    <h3 class="lang-fr">Méthodologie de la recherche & séminaire de thèse</h3>
+                    <h3 class="lang-en">Research methodology & thesis seminar</h3>
+                    <p class="inst">École de Médecine Saint Christopher Iba Mar Diop, Dakar</p>
+                </article>
 
-            <article class="proj-card" data-year="2026">
-                <div class="proj-head">
-                    <span class="proj-year">2025–2026</span>
-                    <span class="proj-role lang-fr">Co-Investigateur</span>
-                    <span class="proj-role lang-en">Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Volonté à payer pour une supplémentation en micronutriments multiples chez les femmes enceintes</h3>
-                <h3 class="proj-title lang-en">Willingness to pay for multiple micronutrient supplementation among pregnant women</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Louga — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Helen Keller Intl</span></div>
-                </div>
-            </article>
+                <article class="teach-card">
+                    <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
+                    <h3 class="lang-fr">Recherche de Mise en Œuvre (MOOC)</h3>
+                    <h3 class="lang-en">Implementation Research (MOOC)</h3>
+                    <p class="inst">Regional Training Center — UCAD / TDR-OMS</p>
+                </article>
 
-            <article class="proj-card" data-year="2026">
-                <div class="proj-head">
+                <article class="teach-card">
                     <span class="proj-year">2025</span>
-                    <span class="proj-role lang-fr">Investigateur Principal</span>
-                    <span class="proj-role lang-en">Principal Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Évaluation nationale du système des laboratoires de biologie médicale</h3>
-                <h3 class="proj-title lang-en">National evaluation of the medical biology laboratory system</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Direction des Laboratoires – MSAS / RESAOLAB</span></div>
-                </div>
-            </article>
+                    <h3 class="lang-fr">Biostatistique et Épidémiologie</h3>
+                    <h3 class="lang-en">Biostatistics & Epidemiology</h3>
+                    <p class="inst lang-fr">Université Alioune Diop de Bambey — Master 1 Santé Communautaire</p>
+                    <p class="inst lang-en">Alioune Diop University of Bambey — Master 1 Community Health</p>
+                </article>
 
-            <article class="proj-card" data-year="2026">
-                <div class="proj-head">
+                <article class="teach-card">
                     <span class="proj-year">2025</span>
-                    <span class="proj-role lang-fr">Co-investigateur</span>
-                    <span class="proj-role lang-en">Co-investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Évaluation finale du projet COVID-19 (2020–2025)</h3>
-                <h3 class="proj-title lang-en">Final evaluation of the COVID-19 project (2020–2025)</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
-                </div>
-            </article>
+                    <h3 class="lang-fr">Pharmacie Internationale</h3>
+                    <h3 class="lang-en">International Pharmacy</h3>
+                    <p class="inst lang-fr">UQAT, Québec, Canada — Master en Santé Mondiale</p>
+                    <p class="inst lang-en">UQAT, Quebec, Canada — Master in Global Health</p>
+                </article>
 
-            <!-- 2024-2026 Chatbot -->
-            <article class="proj-card" data-year="2024">
-                <div class="proj-head">
-                    <span class="proj-year">2024–2026</span>
-                    <span class="proj-role lang-fr">Co-Investigateur</span>
-                    <span class="proj-role lang-en">Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Chatbot LLM (GPT-4) sur la planification familiale</h3>
-                <h3 class="proj-title lang-en">LLM (GPT-4) chatbot on family planning</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Dakar — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>DIMAGI / Fondation Bill & Melinda Gates</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-university"></i><span>UCAD</span></div>
-                </div>
-            </article>
+                <article class="teach-card">
+                    <span class="proj-year">2025</span>
+                    <h3 class="lang-fr">Analyse des données de la RAM (package AMR dans R)</h3>
+                    <h3 class="lang-en">AMR data analysis (R AMR package)</h3>
+                    <p class="inst lang-fr">Direction de l'Élevage — MASAE / FAO</p>
+                    <p class="inst lang-en">Directorate of Livestock — MASAE / FAO</p>
+                </article>
 
-            <!-- 2023-Pres Coordinateur TDR -->
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023 — Présent</span>
-                    <span class="proj-role lang-fr">Coordinateur</span>
-                    <span class="proj-role lang-en">Coordinator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Programme du Centre Régional de Formation (MOOC & formations sur la recherche de mise en œuvre)</h3>
-                <h3 class="proj-title lang-en">Regional Training Center Program (MOOC & implementation-research trainings)</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">Afrique francophone</span><span class="lang-en">French-speaking Africa</span></span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>TDR – OMS / UCAD</span></div>
-                </div>
-            </article>
-
-            <!-- 2024-2025 APHRC -->
-            <article class="proj-card" data-year="2024">
-                <div class="proj-head">
-                    <span class="proj-year">2024–2025</span>
-                    <span class="proj-role lang-fr">Co-Investigateur</span>
-                    <span class="proj-role lang-en">Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Planification familiale et santé maternelle, néonatale et infantile</h3>
-                <h3 class="proj-title lang-en">Family planning & maternal, newborn and child health</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">National — Sénégal</span><span class="lang-en">National — Senegal</span></span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>APHRC / Fondation Bill & Melinda Gates</span></div>
-                </div>
-            </article>
-
-            <!-- 2024 -->
-            <article class="proj-card" data-year="2024">
-                <div class="proj-head">
+                <article class="teach-card">
                     <span class="proj-year">2024</span>
-                    <span class="proj-role lang-fr">Co-Investigateur</span>
-                    <span class="proj-role lang-en">Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Évaluation de base de la prise en charge de la malnutrition aiguë</h3>
-                <h3 class="proj-title lang-en">Baseline assessment of acute malnutrition management</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Saint-Louis, Matam, Louga, Diourbel, Tambacounda</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Helen Keller Intl / UCAD</span></div>
-                </div>
-            </article>
+                    <h3 class="lang-fr">Informatique appliquée à l'épidémiologie environnementale — Séries temporelles</h3>
+                    <h3 class="lang-en">Applied computing for environmental epidemiology — Time series</h3>
+                    <p class="inst">ISED – UCAD — Master 2 <span class="lang-fr">Santé Publique option Environnement</span><span class="lang-en">Public Health / Environment</span></p>
+                </article>
 
-            <article class="proj-card" data-year="2024">
-                <div class="proj-head">
+                <article class="teach-card">
                     <span class="proj-year">2024</span>
-                    <span class="proj-role lang-fr">Coordinateur</span>
-                    <span class="proj-role lang-en">Coordinator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Analyse situationnelle de la qualité des soins SRMNIA</h3>
-                <h3 class="proj-title lang-en">Situational analysis of RMNCAH care quality</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>UCAD – DSME</span></div>
-                </div>
-            </article>
+                    <h3 class="lang-fr">Formation accélérée des cadres des ministères</h3>
+                    <h3 class="lang-en">Fast-track training for ministry executives</h3>
+                    <p class="inst lang-fr">Ministères Santé / Élevage / Environnement — Mauritanie (REDISSE)</p>
+                    <p class="inst lang-en">Ministries of Health / Livestock / Environment — Mauritania (REDISSE)</p>
+                </article>
 
-            <article class="proj-card" data-year="2024">
-                <div class="proj-head">
-                    <span class="proj-year">2024</span>
-                    <span class="proj-role lang-fr">Consultant</span>
-                    <span class="proj-role lang-en">Consultant</span>
-                </div>
-                <h3 class="proj-title lang-fr">État des lieux du projet ELUZO</h3>
-                <h3 class="proj-title lang-en">Baseline of the ELUZO project</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal – Burkina Faso</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada</span></div>
-                </div>
-            </article>
+                <article class="teach-card">
+                    <span class="proj-year">2022</span>
+                    <h3 class="lang-fr">Informatique appliquée à l'épidémiologie — FETP</h3>
+                    <h3 class="lang-en">Applied computing for epidemiology — FETP</h3>
+                    <p class="inst lang-fr">FETP (Field Epidemiology Training Program) – CDC, MSAS, Sénégal</p>
+                    <p class="inst lang-en">FETP (Field Epidemiology Training Program) – CDC, MSAS, Senegal</p>
+                </article>
 
-            <!-- 2023 -->
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023–2026</span>
-                    <span class="proj-role lang-fr">Chercheur pays</span>
-                    <span class="proj-role lang-en">Country researcher</span>
-                </div>
-                <h3 class="proj-title lang-fr">Impact de la départementalisation des mutuelles de santé</h3>
-                <h3 class="proj-title lang-en">Impact of the departmentalization of community health insurance</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Niakhar — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFD / UCAD</span></div>
-                </div>
-            </article>
-
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023–2024</span>
-                    <span class="proj-role lang-fr">Resp. Suivi-Évaluation</span>
-                    <span class="proj-role lang-en">M&E Country Lead</span>
-                </div>
-                <h3 class="proj-title lang-fr">Renforcement de capacités des femmes et des filles — lutte contre les zoonoses</h3>
-                <h3 class="proj-title lang-en">Capacity building for women & girls — fight against zoonoses</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Fatick, Kaffrine — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada / ONG COMI</span></div>
-                </div>
-            </article>
-
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023</span>
-                    <span class="proj-role lang-fr">Co-investigateur</span>
-                    <span class="proj-role lang-en">Co-investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Évaluation finale du projet REDISSE (2016–2023)</h3>
-                <h3 class="proj-title lang-en">Final evaluation of the REDISSE project (2016–2023)</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
-                </div>
-            </article>
-
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023</span>
-                    <span class="proj-role lang-fr">Co-investigateur</span>
-                    <span class="proj-role lang-en">Co-investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Analyse situationnelle des accidents de la circulation routière</h3>
-                <h3 class="proj-title lang-en">Situational analysis of road traffic accidents</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span><span class="lang-fr">5 régions — Sénégal</span><span class="lang-en">5 regions — Senegal</span></span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Banque mondiale</span></div>
-                </div>
-            </article>
-
-            <article class="proj-card" data-year="2023">
-                <div class="proj-head">
-                    <span class="proj-year">2023</span>
-                    <span class="proj-role lang-fr">Consultant</span>
-                    <span class="proj-role lang-en">Consultant</span>
-                </div>
-                <h3 class="proj-title lang-fr">Enquête endline — Engagement communautaire & vaccination COVID-19</h3>
-                <h3 class="proj-title lang-en">Endline survey — Community engagement & COVID-19 vaccination</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Tchad</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>BASE / UNICEF / USAID</span></div>
-                </div>
-            </article>
-
-            <!-- Prior -->
-            <article class="proj-card" data-year="prior">
-                <div class="proj-head">
+                <article class="teach-card">
                     <span class="proj-year">2022–2023</span>
-                    <span class="proj-role lang-fr">Investigateur Principal</span>
-                    <span class="proj-role lang-en">Principal Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">Mise en œuvre de la stratégie de vaccination contre le cancer du col de l'utérus</h3>
-                <h3 class="proj-title lang-en">Implementation of the cervical cancer vaccination strategy</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Dakar — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>TDR – OMS</span></div>
-                </div>
-            </article>
+                    <h3 class="lang-fr">Biostatistique & informatique médicale</h3>
+                    <h3 class="lang-en">Biostatistics & medical informatics</h3>
+                    <p class="inst">ISED – UCAD — Master <span class="lang-fr">Santé Publique</span><span class="lang-en">Public Health</span></p>
+                </article>
+            </div>
+        </div>
+    </div>
 
-            <article class="proj-card" data-year="prior">
-                <div class="proj-head">
-                    <span class="proj-year">2021</span>
-                    <span class="proj-role lang-fr">Co-Investigateur principal</span>
-                    <span class="proj-role lang-en">Lead Co-Investigator</span>
-                </div>
-                <h3 class="proj-title lang-fr">CAP sur la prise en charge de la rage — professionnels de santé humaine et animale</h3>
-                <h3 class="proj-title lang-en">KAP study on rabies management — human & animal health workers</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Kaffrine — Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFROHUN / USAID</span></div>
-                </div>
-            </article>
+    <div data-contact-teaser></div>
+</section>
 
-            <article class="proj-card" data-year="prior">
-                <div class="proj-head">
-                    <span class="proj-year">2020–2022</span>
-                    <span class="proj-role lang-fr">Statisticien</span>
-                    <span class="proj-role lang-en">Statistician</span>
-                </div>
-                <h3 class="proj-title lang-fr">Plateforme technologique pour la démocratie et l'amélioration des systèmes de santé</h3>
-                <h3 class="proj-title lang-en">Technology platform for democracy & health system improvement</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Burkina Faso, RDC, Bénin</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>Affaires Mondiales Canada / IRD</span></div>
-                </div>
-            </article>
+<!-- ========== PANEL : PUBLICATIONS ========== -->
+<section class="panel" id="panel-publications">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker">Publications</span>
+                <h2 class="section-title">
+                    <span class="lang-fr">41+ articles évalués par les pairs</span>
+                    <span class="lang-en">41+ peer-reviewed publications</span>
+                </h2>
+                <p class="section-desc">
+                    <span class="lang-fr">Articles scientifiques (premier auteur, co-auteur) et ouvrages publiés.</span>
+                    <span class="lang-en">Scientific articles (first author, co-author) and published books.</span>
+                </p>
+            </div>
 
-            <article class="proj-card" data-year="prior">
-                <div class="proj-head">
-                    <span class="proj-year">2020–2022</span>
-                    <span class="proj-role lang-fr">Assistant de recherche</span>
-                    <span class="proj-role lang-en">Research assistant</span>
-                </div>
-                <h3 class="proj-title lang-fr">Recherche-action en appui à la riposte africaine à l'épidémie de COVID-19</h3>
-                <h3 class="proj-title lang-en">Action research supporting Africa's response to COVID-19</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Sénégal</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>AFD / ISED</span></div>
-                </div>
-            </article>
+            <div class="pub-tabs reveal" role="tablist">
+                <button class="pub-tab-btn active" data-pub="first" role="tab">
+                    <span class="lang-fr">Article scientifique — Premier auteur</span>
+                    <span class="lang-en">Research article — First author</span>
+                </button>
+                <button class="pub-tab-btn" data-pub="co" role="tab">
+                    <span class="lang-fr">Article scientifique — Co-auteur</span>
+                    <span class="lang-en">Research article — Co-author</span>
+                </button>
+                <button class="pub-tab-btn" data-pub="book" role="tab">
+                    <span class="lang-fr">Livre</span>
+                    <span class="lang-en">Book</span>
+                </button>
+            </div>
 
-            <article class="proj-card" data-year="prior">
-                <div class="proj-head">
-                    <span class="proj-year">2019–2020</span>
-                    <span class="proj-role lang-fr">Statisticien</span>
-                    <span class="proj-role lang-en">Statistician</span>
+            <div class="pub-panel active" id="pub-first">
+                <ul class="pub-list reveal">
+                    <li class="pub-item">
+                        <div class="pub-title">Factors associated with contraceptive use among adolescents in three regions of Senegal</div>
+                        <div class="pub-authors"><span class="me">Ba MF</span>, Diallo AI, Diongue FB, Ndiaye I, Ndiaye NS, Mbaye SM, Sougou NM, Samb OM, Faye A.</div>
+                        <div class="pub-journal">Afr J Reprod Health. 2024 Aug 31;28(8s):155–162.</div>
+                        <a href="https://doi.org/10.29063/ajrh2024/v28i8s.18" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Predictors of cessation of exclusive breastfeeding according to the Cox regression model: survey of mothers of children aged 6–12 months, Thiès, Senegal</div>
+                        <div class="pub-authors"><span class="me">Ba MF</span>, Bassoum O, Camara MD, Faye A.</div>
+                        <div class="pub-journal">Pan African Medical Journal. 2023;46:12.</div>
+                        <a href="https://doi.org/10.11604/pamj.2023.46.12.39603" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Acceptability of contact management and care of simple cases of COVID-19 at home: a cross-sectional study in Senegal</div>
+                        <div class="pub-authors"><span class="me">Ba MF</span>, Ridde V, Diallo AI, Tine JAD, Kane B, Gaye I, Traoré Z, Bonnet E, Faye A.</div>
+                        <div class="pub-journal">Trans R Soc Trop Med Hyg. 2022 Oct 12:trac094.</div>
+                        <a href="https://doi.org/10.1093/trstmh/trac094" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Factors associated with COVID-19 vaccine hesitancy in Senegal: a mixed study</div>
+                        <div class="pub-authors"><span class="me">Ba MF</span>, Faye A, Kane B, Diallo AI, Junot A, Gaye I, Bonnet E, Ridde V.</div>
+                        <div class="pub-journal">Hum Vaccin Immunother. 2022 May 11:1–12.</div>
+                        <a href="https://doi.org/10.1080/21645515.2022.2060020" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Knowledge, Attitudes and Practices on Rabies among Human and Animal Health Professionals in Senegal</div>
+                        <div class="pub-authors"><span class="me">Ba MF</span>, Kane NM, Diallo MKK, Bassoum O, Boh OK, Mboup FZM, Faye EHB, Bedekelabou AP, Dieng SD, Diop FN, Badiane M, Ridde V, Faye A.</div>
+                        <div class="pub-journal">Pathogens. 2021;10(10):1282.</div>
+                        <a href="https://doi.org/10.3390/pathogens10101282" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pub-panel" id="pub-co">
+                <ul class="pub-list reveal">
+                    <li class="pub-item">
+                        <div class="pub-title">Factors associated with Senegalese health workers' willingness to receive mobile digital payments: cross-sectional study</div>
+                        <div class="pub-authors">Diallo AI, <span class="me">Ba MF</span>, Louart S, Diongue FB, Gaye I, Bonnet E, Diedhiou A, Ndiaye S, Mboup Z, Ridde V, Faye A.</div>
+                        <div class="pub-journal">BMJ Glob Health. 2025 Nov 19;10(Suppl 4):e017468.</div>
+                        <a href="https://doi.org/10.1136/bmjgh-2024-017468" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Facteurs associés à la vaccination contre la COVID-19 chez les professionnels de santé du district centre de Dakar, Sénégal</div>
+                        <div class="pub-authors">Fall NM, <span class="me">Ba MF</span>, Diallo-Mbaye K, Diallo AI, Diongue FB, Cisse VMP, Diatta E, Mbaye MT, Faye A, Seydi M.</div>
+                        <div class="pub-journal">Dakar Med. 2025;69(2):19–25.</div>
+                        <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Trends in female genital mutilation (FGM) among Senegalese women and their daughters: secondary analysis of Senegal DHS 2015–2023</div>
+                        <div class="pub-authors">Sougou NM, <span class="me">Ba MF</span>, Diongue FB, Diallo AI, Ndiaye I, Seck I.</div>
+                        <div class="pub-journal">BMC Public Health. 2025 Aug 19;25(1):2830.</div>
+                        <a href="https://doi.org/10.1186/s12889-025-23975-8" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Factors associated with measles vaccination among children aged 12–59 months in Tambacounda, Senegal, in 2021</div>
+                        <div class="pub-authors">Gadiaga T, <span class="me">Ba MF</span>, Ndiaye M, Ba MS, Sagna S, Cissé B, et al.</div>
+                        <div class="pub-journal">Journal of Interventional Epidemiology and Public Health. 2025;8:8.</div>
+                        <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Scaling Up Departmental Health Insurance Units in Senegal: A Mixed-Method Study</div>
+                        <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Kane B, Chouaïd A, Faye A.</div>
+                        <div class="pub-journal">Health Syst Reform. 2024 Dec 16;10(1):2402084.</div>
+                        <a href="https://doi.org/10.1080/23288604.2024.2402084" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Factors Associated with Family Planning: A Secondary Analysis of Senegal's DHS 2019</div>
+                        <div class="pub-authors">Sougou NM, <span class="me">Ba MF</span>, Ouari EH, Lopez FBD, Diallo AI, et al.</div>
+                        <div class="pub-journal">Cent Afr J Public Health. 2024;10(4):176–182.</div>
+                        <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Déterminants de l'acceptabilité du paiement mobile par les agents de santé au Sénégal</div>
+                        <div class="pub-authors">Faye PL, <span class="me">Ba MF</span>, Mboup FZM, Ndiaye S, Sy I, Faye A.</div>
+                        <div class="pub-journal">Dakar Médical. 2024;68(2):10–15.</div>
+                        <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Determinants of timely administration of the birth dose of hepatitis B vaccine in Senegal in 2019</div>
+                        <div class="pub-authors">Bassoum O, <span class="me">Ba MF</span>, Sougou NM, Sow A, Seck I.</div>
+                        <div class="pub-journal">PLOS Glob Public Health. 2024;4(8):e0002734.</div>
+                        <a href="https://doi.org/10.1371/journal.pgph.0002734" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Evaluation of Obstacles to Low Coverage of Routine Vitamin A Supplementation in 2021 — Guédiawaye Health District, Senegal</div>
+                        <div class="pub-authors">Camara MD, <span class="me">Ba MF</span>, Diallo YD, Fall I, Bassoum O, Diongue M, et al.</div>
+                        <div class="pub-journal">Science Journal of Public Health. 2024;12(2):31–50.</div>
+                        <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Assessment of the efficiency of the routine epidemiological surveillance system for malaria — Tambacounda Health District, Senegal</div>
+                        <div class="pub-authors">Gadiaga T, <span class="me">Ba MF</span>, Sagna S, Cissé B, Séne D, Sarr SC, et al.</div>
+                        <div class="pub-journal">Pan African Medical Journal. 2024;48:41.</div>
+                        <a href="https://doi.org/10.11604/pamj.2024.48.41.41888" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Use of interviewer-administered telephone surveys during infectious disease outbreaks, epidemics and pandemics: a scoping review</div>
+                        <div class="pub-authors">Arita S, <span class="me">Ba MF</span>, Traoré Z, Bonnet E, Faye A, Ridde V.</div>
+                        <div class="pub-journal">BMJ Glob Health. 2023 May;8(5):e011109.</div>
+                        <a href="https://doi.org/10.1136/bmjgh-2022-011109" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Investigation et riposte face à un cas de fièvre hémorragique virale — District sanitaire de Tambacounda, Sénégal</div>
+                        <div class="pub-authors">Gadiaga T, Bassoum O, <span class="me">Ba MF</span>, Ba MS, Ndiaye M, Diao PM, et al.</div>
+                        <div class="pub-journal">PAMJ - One Health. 2023;12(9).</div>
+                        <a href="https://doi.org/10.11604/pamj-oh.2023.12.9.41632" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Factors that foster and challenge the sustainability of departmental health insurance units in Senegal</div>
+                        <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Guyot M, Kane B, Mbow NB, Senghor I, Faye A.</div>
+                        <div class="pub-journal">International Social Security Review. 2022;75:97–117.</div>
+                        <a href="https://doi.org/10.1111/issr.12300" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Knowledge of COVID-19 and the impact on indigents' access to healthcare in Burkina Faso</div>
+                        <div class="pub-authors">Bonnet E, Beaugé Y, <span class="me">Ba MF</span>, Sidibé S, De Allegri M, Ridde V.</div>
+                        <div class="pub-journal">Int J Equity Health. 2022 Oct 27;21(1):150.</div>
+                        <a href="https://doi.org/10.1186/s12939-022-01778-2" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Impact of community-based health insurance on healthcare utilisation and out-of-pocket expenditures for the poor in Senegal</div>
+                        <div class="pub-authors">Ly MS, Faye A, <span class="me">Ba MF</span>.</div>
+                        <div class="pub-journal">BMJ Open. 2022;12:e063035.</div>
+                        <a href="https://doi.org/10.1136/bmjopen-2022-063035" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Participating in a vaccine trial for COVID-19 in Senegal: trust and information</div>
+                        <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Gaye I, Diallo AI, Bonnet E, Faye A.</div>
+                        <div class="pub-journal">Hum Vaccin Immunother. 2021 Jul 19:1–6.</div>
+                        <a href="https://doi.org/10.1080/21645515.2021.1951097" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                    <li class="pub-item">
+                        <div class="pub-title">Evaluation of Prescribing Indicators in a Paediatric Population — Gaspard Kamara Health Centre, Senegal (2019)</div>
+                        <div class="pub-authors">Bassoum O, <span class="me">Ba MF</span>, Sougou NM, Fall D, Faye A.</div>
+                        <div class="pub-journal">Pharmacy. 2021;9(2):113.</div>
+                        <a href="https://doi.org/10.3390/pharmacy9020113" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="pub-panel" id="pub-book">
+                <ul class="pub-list reveal book-list">
+                    <li class="pub-item book-item">
+                        <div class="book-cover"><i class="fa-solid fa-book"></i></div>
+                        <div class="book-body">
+                            <div class="pub-title">
+                                <span class="lang-fr">Hôpitaux et santé publique face à la pandémie de Covid-19</span>
+                                <span class="lang-en">Hospitals and public health facing the Covid-19 pandemic</span>
+                            </div>
+                            <div class="pub-authors">
+                                <span class="lang-fr">Sous la direction de&nbsp;Valéry Ridde, Lola Traverson&nbsp;et&nbsp;Kate Zinszer</span>
+                                <span class="lang-en">Edited by&nbsp;Valéry Ridde, Lola Traverson&nbsp;&&nbsp;Kate Zinszer</span>
+                            </div>
+                            <div class="pub-journal">
+                                <span class="lang-fr"><strong>3 chapitres</strong> co-écrits par&nbsp;<span class="me">Ba MF</span>&nbsp;· Éditions Science et bien commun</span>
+                                <span class="lang-en"><strong>3 chapters</strong> co-authored by&nbsp;<span class="me">Ba MF</span>&nbsp;· Éditions Science et bien commun</span>
+                            </div>
+                            <a href="https://scienceetbiencommun.pressbooks.pub/hospicovid/" class="pub-link" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span class="lang-fr">Lire l'ouvrage</span>
+                                <span class="lang-en">Read the book</span>
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="pub-item book-item">
+                        <div class="book-cover"><i class="fa-solid fa-book-open"></i></div>
+                        <div class="book-body">
+                            <div class="pub-title">
+                                <span class="lang-fr">Santé Publique</span>
+                                <span class="lang-en">Santé Publique (Public Health)</span>
+                            </div>
+                            <div class="pub-authors">
+                                <span class="lang-fr">Sous la direction d'&nbsp;Adama Faye</span>
+                                <span class="lang-en">Edited by&nbsp;Adama Faye</span>
+                            </div>
+                            <div class="pub-journal">
+                                <span class="lang-fr"><strong>2 chapitres</strong> co-écrits par&nbsp;<span class="me">Ba MF</span>&nbsp;· Éditions de l'UCAD, Dakar</span>
+                                <span class="lang-en"><strong>2 chapters</strong> co-authored by&nbsp;<span class="me">Ba MF</span>&nbsp;· UCAD University Press, Dakar</span>
+                            </div>
+                            <a href="https://editions.ucad.sn/ouvrages/55" class="pub-link" target="_blank" rel="noopener">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                <span class="lang-fr">Lire l'ouvrage</span>
+                                <span class="lang-en">Read the book</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div data-contact-teaser></div>
+</section>
+
+<!-- ========== PANEL : SKILLS ========== -->
+<section class="panel" id="panel-skills">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker"><span class="lang-fr">Compétences</span><span class="lang-en">Skills</span></span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Une boîte à outils complète</span>
+                    <span class="lang-en">A complete toolbox</span>
+                </h2>
+            </div>
+
+            <div class="skills-grid reveal">
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3><span class="lang-fr">Analyse de données</span><span class="lang-en">Data analysis</span></h3>
+                    <p>R (tidyverse, ggplot2, AMR), SPSS, Epi Info, Stata</p>
                 </div>
-                <h3 class="proj-title lang-fr">Profils des indigents et non-indigents — méthode Proxy Mean Test</h3>
-                <h3 class="proj-title lang-en">Profiling of indigents & non-indigents — Proxy Mean Test method</h3>
-                <div class="proj-meta">
-                    <div class="proj-meta-row"><i class="fa-solid fa-location-dot"></i><span>Mali</span></div>
-                    <div class="proj-meta-row"><i class="fa-solid fa-handshake"></i><span>ANAM</span></div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-microscope"></i></div>
+                    <h3><span class="lang-fr">Épidémiologie</span><span class="lang-en">Epidemiology</span></h3>
+                    <p><span class="lang-fr">Conception d'études, analyse épidémiologique, séries temporelles, biostatistique</span><span class="lang-en">Study design, epidemiological analysis, time series, biostatistics</span></p>
                 </div>
-            </article>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                    <h3><span class="lang-fr">Évaluation</span><span class="lang-en">Evaluation</span></h3>
+                    <p><span class="lang-fr">Méthodologie mixte, évaluation de programmes, cartographie conceptuelle</span><span class="lang-en">Mixed methods, program evaluation, concept mapping</span></p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-people-arrows"></i></div>
+                    <h3><span class="lang-fr">Recherche de mise en œuvre</span><span class="lang-en">Implementation research</span></h3>
+                    <p><span class="lang-fr">Cadres E2A, CFIR, RE-AIM ; recherche-action</span><span class="lang-en">E2A, CFIR, RE-AIM frameworks; action research</span></p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                    <h3><span class="lang-fr">Cartographie</span><span class="lang-en">Mapping</span></h3>
+                    <p>QGIS, Magrit, Datawrapper</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3><span class="lang-fr">Gestion de projet</span><span class="lang-en">Project management</span></h3>
+                    <p><span class="lang-fr">MS Project, planification, suivi-évaluation, cadre logique</span><span class="lang-en">MS Project, planning, M&E, logical framework</span></p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3><span class="lang-fr">IA & santé numérique</span><span class="lang-en">AI & digital health</span></h3>
+                    <p><span class="lang-fr">Évaluation de chatbots LLM (GPT-4), UX recherche (CUQ, ITS)</span><span class="lang-en">LLM chatbot evaluation (GPT-4), UX research (CUQ, ITS)</span></p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon"><i class="fa-solid fa-language"></i></div>
+                    <h3><span class="lang-fr">Langues</span><span class="lang-en">Languages</span></h3>
+                    <p><span class="lang-fr">Français (natif), Anglais (professionnel), Wolof</span><span class="lang-en">French (native), English (professional), Wolof</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-contact-teaser></div>
+</section>
+
+<!-- ========== PANEL : CONTACT ========== -->
+<section class="panel" id="panel-contact">
+    <div class="section">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="section-kicker">Contact</span>
+                <h2 class="section-title">
+                    <span class="lang-fr">Travaillons ensemble</span>
+                    <span class="lang-en">Let's work together</span>
+                </h2>
+                <p class="section-desc">
+                    <span class="lang-fr">Collaborations scientifiques, consultations, invitations ou interviews — je suis joignable aux coordonnées ci-dessous, ou via le formulaire.</span>
+                    <span class="lang-en">Scientific collaborations, consultations, invitations or interviews — reach me via the details below, or through the form.</span>
+                </p>
+            </div>
+
+            <div class="contact-layout reveal">
+                <!-- LEFT : contact info -->
+                <div class="contact-grid">
+                    <a class="contact-card" href="mailto:mouhamadoufaly.ba@ucad.edu.sn">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="contact-info">
+                            <h4><span class="lang-fr">Email institutionnel</span><span class="lang-en">Institutional email</span></h4>
+                            <span>mouhamadoufaly.ba@ucad.edu.sn</span>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="mailto:falyba1@gmail.com">
+                        <div class="contact-icon"><i class="fa-solid fa-at"></i></div>
+                        <div class="contact-info">
+                            <h4><span class="lang-fr">Email personnel</span><span class="lang-en">Personal email</span></h4>
+                            <span>falyba1@gmail.com</span>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="tel:+221778045794">
+                        <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="contact-info">
+                            <h4><span class="lang-fr">Téléphone mobile</span><span class="lang-en">Mobile</span></h4>
+                            <span>+221 77 804 57 94</span>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="tel:+221338233318">
+                        <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                        <div class="contact-info">
+                            <h4><span class="lang-fr">Téléphone bureau</span><span class="lang-en">Office phone</span></h4>
+                            <span>+221 33 823 33 18</span>
+                        </div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="contact-info">
+                            <h4><span class="lang-fr">Adresse</span><span class="lang-en">Address</span></h4>
+                            <span class="lang-fr">Sacré Coeur 3, Dakar, Sénégal</span>
+                            <span class="lang-en">Sacré Coeur 3, Dakar, Senegal</span>
+                        </div>
+                    </div>
+                    <a class="contact-card" href="https://orcid.org/0000-0002-1898-738X" target="_blank" rel="noopener">
+                        <div class="contact-icon"><i class="fa-brands fa-orcid"></i></div>
+                        <div class="contact-info">
+                            <h4>ORCID</h4>
+                            <span>0000-0002-1898-738X</span>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://www.researchgate.net/profile/Mouhamadou-Faly-Ba" target="_blank" rel="noopener">
+                        <div class="contact-icon"><i class="fa-brands fa-researchgate"></i></div>
+                        <div class="contact-info">
+                            <h4>ResearchGate</h4>
+                            <span>Mouhamadou-Faly-Ba</span>
+                        </div>
+                    </a>
+                    <a class="contact-card" href="https://linkedin.com/in/mouhamadou-faly-ba-8767581b1/" target="_blank" rel="noopener">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                        <div class="contact-info">
+                            <h4>LinkedIn</h4>
+                            <span>Mouhamadou Faly Ba</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- RIGHT : contact form -->
+                <form class="contact-form" id="contact-form"
+                      action="https://formsubmit.co/falyba1@gmail.com"
+                      method="POST">
+                    <h3>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="lang-fr">&nbsp;Envoyer un message</span>
+                        <span class="lang-en">&nbsp;Send a message</span>
+                    </h3>
+                    <p class="form-desc">
+                        <span class="lang-fr">Votre message sera envoyé directement à mon adresse personnelle.</span>
+                        <span class="lang-en">Your message will be sent directly to my personal email.</span>
+                    </p>
+
+                    <!-- FormSubmit config -->
+                    <input type="hidden" name="_subject" value="Nouveau message depuis falyba1.github.io">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://falyba1.github.io/?sent=1">
+                    <!-- Honeypot anti-spam -->
+                    <input type="text" name="_honey" style="display:none;" tabindex="-1" autocomplete="off">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="f-name"><span class="lang-fr">Nom complet *</span><span class="lang-en">Full name *</span></label>
+                            <input class="form-input" type="text" id="f-name" name="name" required placeholder="Ex: John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="f-email"><span class="lang-fr">Votre email *</span><span class="lang-en">Your email *</span></label>
+                            <input class="form-input" type="email" id="f-email" name="email" required placeholder="you@example.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="f-subject"><span class="lang-fr">Objet</span><span class="lang-en">Subject</span></label>
+                        <input class="form-input" type="text" id="f-subject" name="subject" placeholder="Collaboration / Interview / Consultation…">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="f-message"><span class="lang-fr">Commentaire / Message *</span><span class="lang-en">Comment / Message *</span></label>
+                        <textarea class="form-textarea" id="f-message" name="message" rows="6" required
+                            placeholder="Votre commentaire ou message détaillé ici…"></textarea>
+                    </div>
+
+                    <button class="form-submit" type="submit">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="lang-fr">Envoyer le message</span>
+                        <span class="lang-en">Send message</span>
+                    </button>
+
+                    <div class="form-success" id="form-success">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span class="lang-fr">Merci, votre message a bien été envoyé !</span>
+                        <span class="lang-en">Thank you, your message has been sent!</span>
+                    </div>
+                    <div class="form-error" id="form-error">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span class="lang-fr">Oups, une erreur est survenue. Réessayez ou écrivez directement à falyba1@gmail.com.</span>
+                        <span class="lang-en">Oops, something went wrong. Please try again or email falyba1@gmail.com directly.</span>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- ========== TEACHING ========== -->
-<section class="section section--alt" id="teaching">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">
-                <span class="lang-fr">Enseignement</span><span class="lang-en">Teaching</span>
-            </span>
-            <h2 class="section-title">
-                <span class="lang-fr">Transmettre la rigueur de la recherche</span>
-                <span class="lang-en">Transmitting research rigor</span>
-            </h2>
-            <p class="section-desc">
-                <span class="lang-fr">Cours en méthodologie, biostatistique, épidémiologie et analyse de données (R), dispensés dans plusieurs universités en Afrique et au Canada.</span>
-                <span class="lang-en">Lectures in methodology, biostatistics, epidemiology and data analysis (R), delivered in several universities in Africa and Canada.</span>
-            </p>
-        </div>
-
-        <div class="teaching-grid reveal">
-            <article class="teach-card">
-                <span class="proj-year">2023 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
-                <h3 class="lang-fr">Méthodologie de la recherche</h3>
-                <h3 class="lang-en">Research methodology</h3>
-                <p class="inst lang-fr">Faculté de Médecine, de Pharmacie et d'Odontologie — UCAD (Master / DES)</p>
-                <p class="inst lang-en">Faculty of Medicine, Pharmacy & Odontology — UCAD (Master / Specialization)</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
-                <h3 class="lang-fr">Informatique appliquée à l'épidémiologie (R)</h3>
-                <h3 class="lang-en">Applied computing for epidemiology (R)</h3>
-                <p class="inst lang-fr">Université Gaston Berger, Saint-Louis — Master en Alimentation et Nutrition</p>
-                <p class="inst lang-en">Gaston Berger University, Saint-Louis — Master in Food & Nutrition</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
-                <h3 class="lang-fr">Méthodologie de la recherche & séminaire de thèse</h3>
-                <h3 class="lang-en">Research methodology & thesis seminar</h3>
-                <p class="inst">École de Médecine Saint Christopher Iba Mar Diop, Dakar</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2022 — <span class="lang-fr">Présent</span><span class="lang-en">Present</span></span>
-                <h3 class="lang-fr">Recherche de Mise en Œuvre (MOOC)</h3>
-                <h3 class="lang-en">Implementation Research (MOOC)</h3>
-                <p class="inst">Regional Training Center — UCAD / TDR-OMS</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2025</span>
-                <h3 class="lang-fr">Biostatistique et Épidémiologie</h3>
-                <h3 class="lang-en">Biostatistics & Epidemiology</h3>
-                <p class="inst lang-fr">Université Alioune Diop de Bambey — Master 1 Santé Communautaire</p>
-                <p class="inst lang-en">Alioune Diop University of Bambey — Master 1 Community Health</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2025</span>
-                <h3 class="lang-fr">Pharmacie Internationale</h3>
-                <h3 class="lang-en">International Pharmacy</h3>
-                <p class="inst lang-fr">UQAT, Québec, Canada — Master en Santé Mondiale</p>
-                <p class="inst lang-en">UQAT, Quebec, Canada — Master in Global Health</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2025</span>
-                <h3 class="lang-fr">Analyse des données de la RAM (package AMR dans R)</h3>
-                <h3 class="lang-en">AMR data analysis (R AMR package)</h3>
-                <p class="inst lang-fr">Direction de l'Élevage — MASAE / FAO</p>
-                <p class="inst lang-en">Directorate of Livestock — MASAE / FAO</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2024</span>
-                <h3 class="lang-fr">Pratique de recherche en santé mondiale</h3>
-                <h3 class="lang-en">Global Health research practice</h3>
-                <p class="inst lang-fr">Université de Montréal — Doctorat en Santé Mondiale</p>
-                <p class="inst lang-en">University of Montreal — PhD in Global Health</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2024</span>
-                <h3 class="lang-fr">Informatique appliquée à l'épidémiologie environnementale — Séries temporelles</h3>
-                <h3 class="lang-en">Applied computing for environmental epidemiology — Time series</h3>
-                <p class="inst">ISED – UCAD — Master 2 <span class="lang-fr">Santé Publique option Environnement</span><span class="lang-en">Public Health / Environment</span></p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2024</span>
-                <h3 class="lang-fr">Formation accélérée des cadres des ministères</h3>
-                <h3 class="lang-en">Fast-track training for ministry executives</h3>
-                <p class="inst lang-fr">Ministères Santé / Élevage / Environnement — Mauritanie (REDISSE)</p>
-                <p class="inst lang-en">Ministries of Health / Livestock / Environment — Mauritania (REDISSE)</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2022</span>
-                <h3 class="lang-fr">Informatique appliquée à l'épidémiologie — FETP</h3>
-                <h3 class="lang-en">Applied computing for epidemiology — FETP</h3>
-                <p class="inst lang-fr">FETP (Field Epidemiology Training Program) – CDC, MSAS, Sénégal</p>
-                <p class="inst lang-en">FETP (Field Epidemiology Training Program) – CDC, MSAS, Senegal</p>
-            </article>
-
-            <article class="teach-card">
-                <span class="proj-year">2022–2023</span>
-                <h3 class="lang-fr">Biostatistique & informatique médicale</h3>
-                <h3 class="lang-en">Biostatistics & medical informatics</h3>
-                <p class="inst">ISED – UCAD — Master <span class="lang-fr">Santé Publique</span><span class="lang-en">Public Health</span></p>
-            </article>
-        </div>
-    </div>
-</section>
-
-<!-- ========== PUBLICATIONS ========== -->
-<section class="section" id="publications">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">Publications</span>
-            <h2 class="section-title">
-                <span class="lang-fr">41+ articles évalués par les pairs</span>
-                <span class="lang-en">41+ peer-reviewed articles</span>
-            </h2>
-            <p class="section-desc">
-                <span class="lang-fr">Sélection de publications scientifiques — premier auteur et co-auteur — dans des revues internationales à comité de lecture.</span>
-                <span class="lang-en">Selection of peer-reviewed publications — first author and co-author — in international journals.</span>
-            </p>
-        </div>
-
-        <div class="pub-tabs reveal" role="tablist">
-            <button class="pub-tab-btn active" data-pub="first" role="tab">
-                <span class="lang-fr">Premier auteur</span><span class="lang-en">First author</span>
-            </button>
-            <button class="pub-tab-btn" data-pub="co" role="tab">
-                <span class="lang-fr">Co-auteur</span><span class="lang-en">Co-author</span>
-            </button>
-        </div>
-
-        <div class="pub-panel active" id="pub-first">
-            <ul class="pub-list reveal">
-                <li class="pub-item">
-                    <div class="pub-title">Factors associated with contraceptive use among adolescents in three regions of Senegal</div>
-                    <div class="pub-authors"><span class="me">Ba MF</span>, Diallo AI, Diongue FB, Ndiaye I, Ndiaye NS, Mbaye SM, Sougou NM, Samb OM, Faye A.</div>
-                    <div class="pub-journal">Afr J Reprod Health. 2024 Aug 31;28(8s):155–162.</div>
-                    <a href="https://doi.org/10.29063/ajrh2024/v28i8s.18" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Predictors of cessation of exclusive breastfeeding according to the Cox regression model: survey of mothers of children aged 6–12 months, Thiès, Senegal</div>
-                    <div class="pub-authors"><span class="me">Ba MF</span>, Bassoum O, Camara MD, Faye A.</div>
-                    <div class="pub-journal">Pan African Medical Journal. 2023;46:12.</div>
-                    <a href="https://doi.org/10.11604/pamj.2023.46.12.39603" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Acceptability of contact management and care of simple cases of COVID-19 at home: a cross-sectional study in Senegal</div>
-                    <div class="pub-authors"><span class="me">Ba MF</span>, Ridde V, Diallo AI, Tine JAD, Kane B, Gaye I, Traoré Z, Bonnet E, Faye A.</div>
-                    <div class="pub-journal">Trans R Soc Trop Med Hyg. 2022 Oct 12:trac094.</div>
-                    <a href="https://doi.org/10.1093/trstmh/trac094" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Factors associated with COVID-19 vaccine hesitancy in Senegal: a mixed study</div>
-                    <div class="pub-authors"><span class="me">Ba MF</span>, Faye A, Kane B, Diallo AI, Junot A, Gaye I, Bonnet E, Ridde V.</div>
-                    <div class="pub-journal">Hum Vaccin Immunother. 2022 May 11:1–12.</div>
-                    <a href="https://doi.org/10.1080/21645515.2022.2060020" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Knowledge, Attitudes and Practices on Rabies among Human and Animal Health Professionals in Senegal</div>
-                    <div class="pub-authors"><span class="me">Ba MF</span>, Kane NM, Diallo MKK, Bassoum O, Boh OK, Mboup FZM, Faye EHB, Bedekelabou AP, Dieng SD, Diop FN, Badiane M, Ridde V, Faye A.</div>
-                    <div class="pub-journal">Pathogens. 2021;10(10):1282.</div>
-                    <a href="https://doi.org/10.3390/pathogens10101282" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="pub-panel" id="pub-co">
-            <ul class="pub-list reveal">
-                <li class="pub-item">
-                    <div class="pub-title">Factors associated with Senegalese health workers' willingness to receive mobile digital payments: cross-sectional study</div>
-                    <div class="pub-authors">Diallo AI, <span class="me">Ba MF</span>, Louart S, Diongue FB, Gaye I, Bonnet E, Diedhiou A, Ndiaye S, Mboup Z, Ridde V, Faye A.</div>
-                    <div class="pub-journal">BMJ Glob Health. 2025 Nov 19;10(Suppl 4):e017468.</div>
-                    <a href="https://doi.org/10.1136/bmjgh-2024-017468" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Facteurs associés à la vaccination contre la COVID-19 chez les professionnels de santé du district centre de Dakar, Sénégal</div>
-                    <div class="pub-authors">Fall NM, <span class="me">Ba MF</span>, Diallo-Mbaye K, Diallo AI, Diongue FB, Cisse VMP, Diatta E, Mbaye MT, Faye A, Seydi M.</div>
-                    <div class="pub-journal">Dakar Med. 2025;69(2):19–25.</div>
-                    <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Trends in female genital mutilation (FGM) among Senegalese women and their daughters: secondary analysis of Senegal DHS 2015–2023</div>
-                    <div class="pub-authors">Sougou NM, <span class="me">Ba MF</span>, Diongue FB, Diallo AI, Ndiaye I, Seck I.</div>
-                    <div class="pub-journal">BMC Public Health. 2025 Aug 19;25(1):2830.</div>
-                    <a href="https://doi.org/10.1186/s12889-025-23975-8" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Factors associated with measles vaccination among children aged 12–59 months in Tambacounda, Senegal, in 2021</div>
-                    <div class="pub-authors">Gadiaga T, <span class="me">Ba MF</span>, Ndiaye M, Ba MS, Sagna S, Cissé B, et al.</div>
-                    <div class="pub-journal">Journal of Interventional Epidemiology and Public Health. 2025;8:8.</div>
-                    <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Scaling Up Departmental Health Insurance Units in Senegal: A Mixed-Method Study</div>
-                    <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Kane B, Chouaïd A, Faye A.</div>
-                    <div class="pub-journal">Health Syst Reform. 2024 Dec 16;10(1):2402084.</div>
-                    <a href="https://doi.org/10.1080/23288604.2024.2402084" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Factors Associated with Family Planning: A Secondary Analysis of Senegal's DHS 2019</div>
-                    <div class="pub-authors">Sougou NM, <span class="me">Ba MF</span>, Ouari EH, Lopez FBD, Diallo AI, et al.</div>
-                    <div class="pub-journal">Cent Afr J Public Health. 2024;10(4):176–182.</div>
-                    <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Déterminants de l'acceptabilité du paiement mobile par les agents de santé au Sénégal</div>
-                    <div class="pub-authors">Faye PL, <span class="me">Ba MF</span>, Mboup FZM, Ndiaye S, Sy I, Faye A.</div>
-                    <div class="pub-journal">Dakar Médical. 2024;68(2):10–15.</div>
-                    <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Determinants of timely administration of the birth dose of hepatitis B vaccine in Senegal in 2019</div>
-                    <div class="pub-authors">Bassoum O, <span class="me">Ba MF</span>, Sougou NM, Sow A, Seck I.</div>
-                    <div class="pub-journal">PLOS Glob Public Health. 2024;4(8):e0002734.</div>
-                    <a href="https://doi.org/10.1371/journal.pgph.0002734" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Evaluation of Obstacles to Low Coverage of Routine Vitamin A Supplementation in 2021 — Guédiawaye Health District, Senegal</div>
-                    <div class="pub-authors">Camara MD, <span class="me">Ba MF</span>, Diallo YD, Fall I, Bassoum O, Diongue M, et al.</div>
-                    <div class="pub-journal">Science Journal of Public Health. 2024;12(2):31–50.</div>
-                    <a class="pub-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Assessment of the efficiency of the routine epidemiological surveillance system for malaria — Tambacounda Health District, Senegal</div>
-                    <div class="pub-authors">Gadiaga T, <span class="me">Ba MF</span>, Sagna S, Cissé B, Séne D, Sarr SC, et al.</div>
-                    <div class="pub-journal">Pan African Medical Journal. 2024;48:41.</div>
-                    <a href="https://doi.org/10.11604/pamj.2024.48.41.41888" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Use of interviewer-administered telephone surveys during infectious disease outbreaks, epidemics and pandemics: a scoping review</div>
-                    <div class="pub-authors">Arita S, <span class="me">Ba MF</span>, Traoré Z, Bonnet E, Faye A, Ridde V.</div>
-                    <div class="pub-journal">BMJ Glob Health. 2023 May;8(5):e011109.</div>
-                    <a href="https://doi.org/10.1136/bmjgh-2022-011109" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Investigation et riposte face à un cas de fièvre hémorragique virale — District sanitaire de Tambacounda, Sénégal</div>
-                    <div class="pub-authors">Gadiaga T, Bassoum O, <span class="me">Ba MF</span>, Ba MS, Ndiaye M, Diao PM, et al.</div>
-                    <div class="pub-journal">PAMJ - One Health. 2023;12(9).</div>
-                    <a href="https://doi.org/10.11604/pamj-oh.2023.12.9.41632" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Factors that foster and challenge the sustainability of departmental health insurance units in Senegal</div>
-                    <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Guyot M, Kane B, Mbow NB, Senghor I, Faye A.</div>
-                    <div class="pub-journal">International Social Security Review. 2022;75:97–117.</div>
-                    <a href="https://doi.org/10.1111/issr.12300" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Knowledge of COVID-19 and the impact on indigents' access to healthcare in Burkina Faso</div>
-                    <div class="pub-authors">Bonnet E, Beaugé Y, <span class="me">Ba MF</span>, Sidibé S, De Allegri M, Ridde V.</div>
-                    <div class="pub-journal">Int J Equity Health. 2022 Oct 27;21(1):150.</div>
-                    <a href="https://doi.org/10.1186/s12939-022-01778-2" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Impact of community-based health insurance on healthcare utilisation and out-of-pocket expenditures for the poor in Senegal</div>
-                    <div class="pub-authors">Ly MS, Faye A, <span class="me">Ba MF</span>.</div>
-                    <div class="pub-journal">BMJ Open. 2022;12:e063035.</div>
-                    <a href="https://doi.org/10.1136/bmjopen-2022-063035" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Participating in a vaccine trial for COVID-19 in Senegal: trust and information</div>
-                    <div class="pub-authors">Ridde V, <span class="me">Ba MF</span>, Gaye I, Diallo AI, Bonnet E, Faye A.</div>
-                    <div class="pub-journal">Hum Vaccin Immunother. 2021 Jul 19:1–6.</div>
-                    <a href="https://doi.org/10.1080/21645515.2021.1951097" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-                <li class="pub-item">
-                    <div class="pub-title">Evaluation of Prescribing Indicators in a Paediatric Population — Gaspard Kamara Health Centre, Senegal (2019)</div>
-                    <div class="pub-authors">Bassoum O, <span class="me">Ba MF</span>, Sougou NM, Fall D, Faye A.</div>
-                    <div class="pub-journal">Pharmacy. 2021;9(2):113.</div>
-                    <a href="https://doi.org/10.3390/pharmacy9020113" class="pub-link" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span class="lang-fr">Voir la publication</span><span class="lang-en">View publication</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<!-- ========== SKILLS ========== -->
-<section class="section section--alt" id="skills">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">
-                <span class="lang-fr">Compétences</span><span class="lang-en">Skills</span>
-            </span>
-            <h2 class="section-title">
-                <span class="lang-fr">Une boîte à outils complète</span>
-                <span class="lang-en">A complete toolbox</span>
-            </h2>
-        </div>
-
-        <div class="skills-grid reveal">
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3><span class="lang-fr">Analyse de données</span><span class="lang-en">Data analysis</span></h3>
-                <p>R (tidyverse, ggplot2, AMR), SPSS, Epi Info, Stata</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-microscope"></i></div>
-                <h3><span class="lang-fr">Épidémiologie</span><span class="lang-en">Epidemiology</span></h3>
-                <p><span class="lang-fr">Conception d'études, analyse épidémiologique, séries temporelles, biostatistique</span><span class="lang-en">Study design, epidemiological analysis, time series, biostatistics</span></p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-                <h3><span class="lang-fr">Évaluation</span><span class="lang-en">Evaluation</span></h3>
-                <p><span class="lang-fr">Méthodologie mixte, évaluation de programmes, cartographie conceptuelle</span><span class="lang-en">Mixed methods, program evaluation, concept mapping</span></p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-people-arrows"></i></div>
-                <h3><span class="lang-fr">Recherche de mise en œuvre</span><span class="lang-en">Implementation research</span></h3>
-                <p><span class="lang-fr">Cadres E2A, CFIR, RE-AIM ; recherche-action</span><span class="lang-en">E2A, CFIR, RE-AIM frameworks; action research</span></p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                <h3><span class="lang-fr">Cartographie</span><span class="lang-en">Mapping</span></h3>
-                <p>QGIS, Magrit, Datawrapper</p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-diagram-project"></i></div>
-                <h3><span class="lang-fr">Gestion de projet</span><span class="lang-en">Project management</span></h3>
-                <p><span class="lang-fr">MS Project, planification, suivi-évaluation, cadre logique</span><span class="lang-en">MS Project, planning, M&E, logical framework</span></p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
-                <h3><span class="lang-fr">IA & santé numérique</span><span class="lang-en">AI & digital health</span></h3>
-                <p><span class="lang-fr">Évaluation de chatbots LLM (GPT-4), UX recherche (CUQ, ITS)</span><span class="lang-en">LLM chatbot evaluation (GPT-4), UX research (CUQ, ITS)</span></p>
-            </div>
-            <div class="skill-card">
-                <div class="skill-icon"><i class="fa-solid fa-language"></i></div>
-                <h3><span class="lang-fr">Langues</span><span class="lang-en">Languages</span></h3>
-                <p><span class="lang-fr">Français (natif), Anglais (professionnel), Wolof</span><span class="lang-en">French (native), English (professional), Wolof</span></p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ========== CONTACT ========== -->
-<section class="section" id="contact">
-    <div class="container">
-        <div class="section-head reveal">
-            <span class="section-kicker">Contact</span>
-            <h2 class="section-title">
-                <span class="lang-fr">Travaillons ensemble</span>
-                <span class="lang-en">Let's work together</span>
-            </h2>
-            <p class="section-desc">
-                <span class="lang-fr">Collaborations scientifiques, consultations, invitations ou interviews — je suis joignable aux coordonnées ci-dessous.</span>
-                <span class="lang-en">Scientific collaborations, consultations, invitations or interviews — reach me through the channels below.</span>
-            </p>
-        </div>
-
-        <div class="contact-grid reveal">
-            <a class="contact-card" href="mailto:mouhamadoufaly.ba@ucad.edu.sn">
-                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Email institutionnel</span><span class="lang-en">Institutional email</span></h4>
-                    <span>mouhamadoufaly.ba@ucad.edu.sn</span>
-                </div>
-            </a>
-            <a class="contact-card" href="mailto:falyba1@gmail.com">
-                <div class="contact-icon"><i class="fa-solid fa-at"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Email personnel</span><span class="lang-en">Personal email</span></h4>
-                    <span>falyba1@gmail.com</span>
-                </div>
-            </a>
-            <a class="contact-card" href="tel:+221778045794">
-                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Téléphone mobile</span><span class="lang-en">Mobile</span></h4>
-                    <span>+221 77 804 57 94</span>
-                </div>
-            </a>
-            <a class="contact-card" href="tel:+221338233318">
-                <div class="contact-icon"><i class="fa-solid fa-phone-volume"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Téléphone bureau</span><span class="lang-en">Office phone</span></h4>
-                    <span>+221 33 823 33 18</span>
-                </div>
-            </a>
-            <a class="contact-card" href="https://linkedin.com/in/mouhamadou-faly-ba-8767581b1/" target="_blank" rel="noopener">
-                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                <div class="contact-info">
-                    <h4>LinkedIn</h4>
-                    <span>/mouhamadou-faly-ba</span>
-                </div>
-            </a>
-            <a class="contact-card" href="https://www.ceped.org/fr/les-anciens-du-ceped/anciens-membres-contractuels/article/ba-mouhamadou-faly" target="_blank" rel="noopener">
-                <div class="contact-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Thèse PhD (CEPED)</span><span class="lang-en">PhD thesis (CEPED)</span></h4>
-                    <span class="lang-fr">Consulter ma page</span>
-                    <span class="lang-en">View my page</span>
-                </div>
-            </a>
-            <div class="contact-card">
-                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="contact-info">
-                    <h4><span class="lang-fr">Adresse</span><span class="lang-en">Address</span></h4>
-                    <span class="lang-fr">Sacré Coeur 3, Dakar, Sénégal</span>
-                    <span class="lang-en">Sacré Coeur 3, Dakar, Senegal</span>
-                </div>
-            </div>
-            <a class="contact-card" href="https://twitter.com/falyba94" target="_blank" rel="noopener">
-                <div class="contact-icon"><i class="fa-brands fa-x-twitter"></i></div>
-                <div class="contact-info">
-                    <h4>X / Twitter</h4>
-                    <span>@falyba94</span>
-                </div>
-            </a>
-        </div>
-    </div>
-</section>
+</main>
 
 <!-- ========== FOOTER ========== -->
 <footer>
@@ -1074,6 +1174,8 @@
         </p>
         <div class="foot-social">
             <a href="https://linkedin.com/in/mouhamadou-faly-ba-8767581b1/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.researchgate.net/profile/Mouhamadou-Faly-Ba" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fa-brands fa-researchgate"></i></a>
+            <a href="https://orcid.org/0000-0002-1898-738X" target="_blank" rel="noopener" aria-label="ORCID"><i class="fa-brands fa-orcid"></i></a>
             <a href="https://twitter.com/falyba94" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://github.com/falyba1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a href="mailto:falyba1@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
