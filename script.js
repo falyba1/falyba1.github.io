@@ -1,5 +1,5 @@
 /* =========================================================
-   MOUHAMADOU FALY BA — Portfolio Interactions
+   MOUHAMADOU FALY BA : Portfolio Interactions
    Independent-tabs layout (panels) + FR/EN + dark/light theme
    ========================================================= */
 (function () {
@@ -86,8 +86,8 @@
             cvDownload.href = lang === 'en' ? 'cv/MFB_CV_EN.docx' : 'cv/MFB_CV_FR.docx';
         }
         document.title = lang === 'en'
-            ? 'Mouhamadou Faly Ba, PharmD, MPH, PhD — Public Health Researcher'
-            : 'Mouhamadou Faly Ba, PharmD, MPH, PhD — Chercheur en Santé Publique';
+            ? 'Mouhamadou Faly Ba, PharmD, MPH, PhD | Public Health Researcher'
+            : 'Mouhamadou Faly Ba, PharmD, MPH, PhD | Chercheur en santé publique';
     }
 
     let savedLang = 'fr';
@@ -175,8 +175,8 @@
                     <span class="lang-en">A collaboration in mind?</span>
                 </h3>
                 <p>
-                    <span class="lang-fr">Écrivez-moi — je reviens vers vous rapidement pour les projets de recherche, consultations et interventions.</span>
-                    <span class="lang-en">Get in touch — I reply quickly for research projects, consultations and talks.</span>
+                    <span class="lang-fr">Écrivez-moi : je reviens vers vous rapidement pour les projets de recherche, consultations et interventions.</span>
+                    <span class="lang-en">Get in touch: I reply quickly for research projects, consultations and talks.</span>
                 </p>
             </div>
             <div class="contact-teaser-actions">

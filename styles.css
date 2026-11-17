@@ -1915,3 +1915,110 @@ html[lang="en"] .lang-fr { display: none !important; }
     .hero-title, .hero-sub { color: var(--text); }
     .panel { display: block !important; }
 }
+
+/* =========================================================
+   Mise à jour novembre 2026 : sous-sections, formations
+   complémentaires, encadrement, compteurs d'onglets
+   ========================================================= */
+.subsection-head {
+    margin: 56px 0 20px;
+}
+.subsection-head h3 {
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subsection-head h3 i { color: var(--brand-500); font-size: 1.1rem; }
+
+.mini-list {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.mini-list li {
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+    padding: 12px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 14.5px;
+    line-height: 1.5;
+    color: var(--text-2);
+}
+.mini-year {
+    flex: 0 0 auto;
+    min-width: 48px;
+    font-weight: 700;
+    color: var(--tint-text);
+    font-variant-numeric: tabular-nums;
+}
+.mini-text { min-width: 0; }
+
+.supervision-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+.supervision-card {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 22px 24px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.supervision-num {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    line-height: 1;
+    color: var(--brand-500);
+}
+.supervision-label { font-weight: 600; color: var(--text); line-height: 1.4; }
+.supervision-inst { font-size: 13px; color: var(--text-3); }
+
+.tab-count {
+    display: inline-block;
+    margin-left: 4px;
+    padding: 1px 8px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    background: var(--tint-soft);
+    color: var(--tint-text);
+}
+.pub-tab-btn.active .tab-count { background: var(--brand-500); color: #fff; }
+html[data-theme="dark"] .tab-count { background: #262626; color: #e5e5e5; }
+html[data-theme="dark"] .pub-tab-btn.active .tab-count { background: #f5f5f5; color: #0a0a0a; }
+html[data-theme="dark"] .subsection-head h3 i, html[data-theme="dark"] .supervision-num { color: #f5f5f5; }
+
+.pub-note {
+    text-align: center;
+    color: var(--text-3);
+    font-size: 14px;
+    margin: -8px 0 18px;
+}
+.skills-note {
+    margin-top: 22px;
+    text-align: center;
+    color: var(--text-3);
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .supervision-grid { grid-template-columns: 1fr; }
+    .mini-list li { flex-direction: column; gap: 4px; }
+}
+#panel-education .subsection-head,
+#panel-education .mini-list {
+    max-width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+}
